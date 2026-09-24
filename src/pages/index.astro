@@ -1,11 +1,26 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
+import { getHomePageSchema } from '../utils/schemas.js';
+import Carousel from '../Home/Carousel.astro';
+import PopularCategories from '../Home/PopularCategories.astro';
+import PopularProducts from '../Home/PopularProducts.astro';
+import Brands from '../Home/Brands.astro';
+import BestSellers from '../Home/BestSellers.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const homeSchema = getHomePageSchema(); 
 ---
 
-<Layout>
-	<Welcome />
+<Layout
+  title="Autoboutique Olga - Accesorios y Repuestos para Autos en Perú"
+  description="Compra accesorios y repuestos para autos en Perú: alarmas, autoradios, parlantes, focos LED, cámaras de retroceso y más. Envíos a Lima y provincias."
+  url="https://autoboutiqueolga.com"
+  structuredData={homeSchema}
+>
+  <main>
+    <Carousel />
+    <PopularCategories />
+    <PopularProducts />
+    <Brands />
+    <BestSellers />
+  </main>
 </Layout>
