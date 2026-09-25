@@ -127,8 +127,8 @@
   "slug": "parlantes-focal-auditor-acx-165-6-5-pulgadas-para-carro",
   "name": "Parlantes Focal Auditor ACX-165 para Carro 6.5 Pulgadas (Par) - Sonido de Alta Fidelidad",
   "category": "parlantes",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
     "image": [
     "/parlantes/ACX-165/acx-165.webp",
     "/parlantes/ACX-165/acx-165-diagonal.webp",
@@ -1273,8 +1273,8 @@
   "slug": "parlantes-jbl-gto-629-6-5-pulgadas-para-carro",
   "name": "Parlantes JBL GTO-629 6.5 Pulgadas para Carro (Par) - Sonido Potente y Equilibrado (60W RMS)",
   "category": "parlantes",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
       "image": [
     "/parlantes/GTO-629/gto-629.webp",
     "/parlantes/GTO-629/gto-629-mascara.webp",
@@ -1518,8 +1518,8 @@
   "slug": "kit-parlantes-jbl-stage2-65c-6-5-para-carro",
   "name": "Kit de Parlantes JBL Stage2 65C 6.5 Pulgadas para Carro - La Línea Más Reciente de JBL (90W RMS, 720W Pico)",
   "category": "componentes",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
       "image": [
     "/parlantes/STAGE265C/stage2-65c.webp",
     "/parlantes/STAGE265C/stage2-65c-frente.webp",
@@ -1582,8 +1582,8 @@
   "slug": "parlantes-jbl-stage2-65m-6-5-3-vias-para-carro",
   "name": "Parlantes JBL Stage2 65M 6.5 Pulgadas 3 Vías para Carro (Par) - Sonido Completo, Instalación Directa (480W)",
   "category": "parlantes",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
       "image": [
     "/parlantes/STAGE265M/stage265m.webp",
     "/parlantes/STAGE265M/stage265m-frente.webp",
@@ -1644,8 +1644,8 @@
   "slug": "kit-parlantes-jbl-stage3-68cf-6-5-para-carro",
   "name": "Kit de Parlantes JBL Stage3 68CF 6.5 Pulgadas para Carro - El Tope de Gama JBL (95W RMS, 760W Pico)",
   "category": "componentes",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
       "image": [
     "/parlantes/STAGE368CF/jbl-stage3-68cf.webp",
     "/parlantes/STAGE368CF/jbl-stage3-68cf-trasera.webp",
@@ -1709,8 +1709,8 @@
   "slug": "parlantes-jbl-stage3-68mf-6-5-3-vias-para-carro",
   "name": "Parlantes JBL Stage3 68MF 6.5 Pulgadas 3 Vías para Carro (Par) - Máxima Calidad JBL en Todo-en-Uno (70W RMS)",
   "category": "parlantes",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
       "image": [
     "/parlantes/STAGE368MF/jbl-stage368mf.webp",
     "/parlantes/STAGE368MF/jbl-stage368mf-lado.webp",
@@ -1771,8 +1771,8 @@
   "slug": "parlante-aiwa-5-25-pulgadas-2-vias-150w-taw-1323",
   "name": "Parlante Aiwa 5.25\" 2 Vías 150W - TAW-1323",
   "category": "parlantes",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
         "image": [
     "/parlantes/TAW-1323/taw-1323.webp",
     "/parlantes/TAW-1323/taw-1323-mascara.webp",
@@ -2802,8 +2802,8 @@
   "slug": "parlantes-pervoi-xs-fb1030-4-pulgadas-para-carro",
   "name": "Parlantes Pervoi XS-FB1030 4 Pulgadas para Carro (Par) - Ideal para Salpicadero y Puertas, Fácil Instalación",
   "category": "parlantes",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
       "image": [
     "/parlantes/XS-FB1030/xs-fb1030.webp",
     "/parlantes/XS-FB1030/xs-fb1030-frente.webp",
@@ -2863,8 +2863,8 @@
   "slug": "parlantes-pervoi-xs-fb1630-6-pulgadas-3-vias-para-carro",
   "name": "Parlantes Pervoi XS-FB1630 6 Pulgadas 3 Vías para Carro (Par) - Graves Potentes, Opción Económica (420W)",
   "category": "parlantes",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
       "image": [
     "/parlantes/XS-FB1630/xs-fb1630.webp",
     "/parlantes/XS-FB1630/xs-fb1630-frente.webp",
@@ -2926,8 +2926,8 @@
   "slug": "kit-cables-7power-akit-4-para-amplificador-carro",
   "name": "Kit de Cables 7Power AKIT-4 para Amplificador de Carro - Todo lo que Necesitas en Uno (Calibre 4GA)",
   "category": "cablerias",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
       "image": [
     "/parlantes/AKIT-4/akit-4.webp",
     "/parlantes/AKIT-4/akit-4-diagonal.webp"
@@ -3050,8 +3050,8 @@
   "slug": "kit-cables-7power-ofckit-4-100-cobre-para-amplificador-carro",
   "name": "Kit de Cables 7Power OFCKIT-4 100% Cobre para Amplificador de Carro - Máxima Conducción de Energía (Calibre 4GA)",
   "category": "cablerias",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
       "image": [
     "/parlantes/OFCKIT-4/ofckit-4.webp"
   ],
@@ -5866,8 +5866,8 @@
   "slug": "alarma-rtcar-llave-flip-bluetooth-para-auto",
   "name": "Alarma RTCAR con Llave Flip Bluetooth para Auto - Control por Celular desde la App Smart Car",
   "category": "alarma-rtcar",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
   "image": [
     "/alarmas/llave-flip-rtcar/alarma-1/alarma-llave-flip-rtcar.webp",
     "/alarmas/llave-flip-rtcar/alarma-1/llave-flip-alarma-rtcar.webp"
@@ -6214,8 +6214,8 @@
   "slug": "barra-led-para-auto-luz-led-roja-emergencia-ventosa-80-led",
   "name": "Barra Led para Auto de Luz LED Roja de Emergencia con Ventosa - 80 LED",
   "category": "luces-led-autos",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
   "image": [
     "/barras-led/barra-led-2/barra-led.webp",
     "/barras-led/barra-led-2/barra-led-conector.webp"
@@ -6252,8 +6252,8 @@
   "slug": "barra-led-para-auto-interior-blanca-portatil-ventosa",
   "name": "Barra Led para Auto Interior Blanca Portátil con Ventosa e Interruptor 12V",
   "category": "luces-led-autos",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
   "image": [
     "/barras-led/barra-led-3/barra-led.webp",
     "/barras-led/barra-led-3/barra-led-conector.webp"
@@ -6512,8 +6512,8 @@
   "slug": "kit-cierre-centralizado-safari-y70128a",
   "name": "Kit de Cierre Centralizado Safari - Y70128A",
   "category": "cierre-centralizado",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
   "image": [
     "/cierre-centralizado/safari/cierre-centralizado.webp",
     "/cierre-centralizado/safari/cierre-centralizado-modulo.webp",
@@ -6562,8 +6562,8 @@
   "slug": "kit-cierre-centralizado-autorus-premium-atr500",
   "name": "Kit de Cierre Centralizado Autorus Serie Premium - ATR500",
   "category": "cierre-centralizado",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
   "image": [
     "/cierre-centralizado/autorus/caja-cierre-centralizado.webp",
     "/cierre-centralizado/autorus/pestillo-cierre-centralizado.webp"
@@ -7252,8 +7252,8 @@
   "slug": "foco-led-h4-enl-en80-lupa-proyectora-200w-240000lm",
   "name": "Foco LED H4 ENL EN80 con Lupa Proyectora - 200W 240,000LM",
   "category": "focos-led-h4-para-auto",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
         "image": [
     "/focos/enl-led-en80/foco-enl-led-en80.webp",
     "/focos/enl-led-en80/caja-enl-led-en80.webp"
@@ -7298,8 +7298,8 @@
   "slug": "kit-foco-led-h4-iron-dakar-ir100-blanco-45000lm",
   "name": "Kit Foco LED H4 Iron Dakar IR100 Blanco 6500K - 55W 45,000LM",
   "category": "focos-led-h4-para-auto",
-  "price": 22,
-  "oldPrice": 22,
+  "price": 0,
+  "oldPrice": 0,
       "image": [
     "/focos/IR100-Dakar/foco-ir100-dakar.webp",
     "/focos/IR100-Dakar/caja-y-focos-ir100-dakar.webp",

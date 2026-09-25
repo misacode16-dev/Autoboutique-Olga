@@ -23,7 +23,7 @@ const BRAND_IMAGES = {
 
 const BUSINESS = {
   name: "Autoboutique Olga",
-  telephone: "+51[NÚMERO]",
+  telephone: "+51960884840",
   // email: "[EMAIL]",  // descomentar si hay email
   streetAddress: "Jirón Los Talleres 4479",
   locality: "Independencia",

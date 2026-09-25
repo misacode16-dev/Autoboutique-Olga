@@ -2,7 +2,7 @@
 // Única fuente de verdad para generar los mensajes/links de WhatsApp.
 // Se importa como módulo ES real (no is:inline) desde CartWidget.astro y desde [slug].astro.
 
-export const WHATSAPP_NUMBER = "51907300174"; // sin +, sin espacios
+export const WHATSAPP_NUMBER = "51960884840"; // sin +, sin espacios
 
 // Construye la URL absoluta de un producto a partir de su slug.
 // Usa window.location.origin porque esto siempre corre en el navegador
