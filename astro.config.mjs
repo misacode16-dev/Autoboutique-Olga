@@ -7,7 +7,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
    site: "https://autoboutiqueolga.com",
 
-   trailingSlash: "always",
+  trailingSlash: "always",  //ignore
 
 
    integrations: [

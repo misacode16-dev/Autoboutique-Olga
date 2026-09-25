@@ -49,8 +49,8 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
 
       <!-- GALERÍA -->
       <div class="flex flex-col items-center">
-        <div class="w-full h-[420px] border border-[#f0f0f0] rounded-lg flex items-center justify-center p-5 bg-[#fafafa]">
-          <img id="main-product-img" src={gallery[0].full} alt={name} class="max-w-full max-h-full object-contain" />
+        <div class="w-full border border-[#f0f0f0] rounded-lg flex items-center justify-center">
+          <img id="main-product-img" src={gallery[0].full} alt={name} class="max-w-full max-h-full object-cover" />
         </div>
 
         <div id="thumbnail-row" class="flex gap-3 mt-5 w-full justify-start">
@@ -205,7 +205,7 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
                 <tbody>
                   {specs.map((spec, i) => (
                     <tr class={i < specs.length - 1 ? 'border-b border-[#edf2f7]' : ''}>
-                      <th class="w-[250px] bg-[#f8fafc] text-[#1a202c] font-bold py-3.5 px-5">{spec.label}</th>
+                      <th class="w-[150px] bg-[#f8fafc] text-[#1a202c] font-bold py-3.5 px-5">{spec.label}</th>
                       <td class="bg-[#ffffff] text-[#4a5568] py-3.5 px-5">{spec.value}</td>
                     </tr>
                   ))}
