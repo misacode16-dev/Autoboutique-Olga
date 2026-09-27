@@ -17,8 +17,8 @@ const DOMAIN = "https://autoboutiqueolga.com";
 //           <meta property="og:image"> de esas páginas.
 // ============================================================
 const BRAND_IMAGES = {
-  logo: "/logo-schema.webp",      // 512x512
-  og: "/logo-open-graph.webp",          // 1200x630 (home, tienda, categorías, fallback)
+  logo: "/logo-schema.png",      // 512x512
+  og: "/logo-open-graph.png",          // 1200x630 (home, tienda, categorías, fallback)
 };
 
 const BUSINESS = {
