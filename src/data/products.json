@@ -127,8 +127,8 @@
   "slug": "parlantes-focal-auditor-acx-165-6-5-pulgadas-para-carro",
   "name": "Parlantes Focal Auditor ACX-165 para Carro 6.5 Pulgadas (Par) - Sonido de Alta Fidelidad",
   "category": "parlantes",
-  "price": 0,
-  "oldPrice": 0,
+  "price": 280,
+  "oldPrice": 320,
     "image": [
     "/parlantes/ACX-165/acx-165.webp",
     "/parlantes/ACX-165/acx-165-diagonal.webp",
@@ -1273,8 +1273,8 @@
   "slug": "parlantes-jbl-gto-629-6-5-pulgadas-para-carro",
   "name": "Parlantes JBL GTO-629 6.5 Pulgadas para Carro (Par) - Sonido Potente y Equilibrado (60W RMS)",
   "category": "parlantes",
-  "price": 0,
-  "oldPrice": 0,
+  "price": 400,
+  "oldPrice": 450,
       "image": [
     "/parlantes/GTO-629/gto-629.webp",
     "/parlantes/GTO-629/gto-629-mascara.webp",
@@ -1518,8 +1518,8 @@
   "slug": "kit-parlantes-jbl-stage2-65c-6-5-para-carro",
   "name": "Kit de Parlantes JBL Stage2 65C 6.5 Pulgadas para Carro - La Línea Más Reciente de JBL (90W RMS, 720W Pico)",
   "category": "componentes",
-  "price": 0,
-  "oldPrice": 0,
+  "price": 200,
+  "oldPrice": 240,
       "image": [
     "/parlantes/STAGE265C/stage2-65c.webp",
     "/parlantes/STAGE265C/stage2-65c-frente.webp",
@@ -1644,8 +1644,8 @@
   "slug": "kit-parlantes-jbl-stage3-68cf-6-5-para-carro",
   "name": "Kit de Parlantes JBL Stage3 68CF 6.5 Pulgadas para Carro - El Tope de Gama JBL (95W RMS, 760W Pico)",
   "category": "componentes",
-  "price": 0,
-  "oldPrice": 0,
+  "price": 250,
+  "oldPrice": 300,
       "image": [
     "/parlantes/STAGE368CF/jbl-stage3-68cf.webp",
     "/parlantes/STAGE368CF/jbl-stage3-68cf-trasera.webp",
@@ -1771,8 +1771,8 @@
   "slug": "parlante-aiwa-5-25-pulgadas-2-vias-150w-taw-1323",
   "name": "Parlante Aiwa 5.25\" 2 Vías 150W - TAW-1323",
   "category": "parlantes",
-  "price": 0,
-  "oldPrice": 0,
+  "price": 95,
+  "oldPrice": 135,
         "image": [
     "/parlantes/TAW-1323/taw-1323.webp",
     "/parlantes/TAW-1323/taw-1323-mascara.webp",
@@ -2802,8 +2802,8 @@
   "slug": "parlantes-pervoi-xs-fb1030-4-pulgadas-para-carro",
   "name": "Parlantes Pervoi XS-FB1030 4 Pulgadas para Carro (Par) - Ideal para Salpicadero y Puertas, Fácil Instalación",
   "category": "parlantes",
-  "price": 0,
-  "oldPrice": 0,
+  "price": 60,
+  "oldPrice": 100,
       "image": [
     "/parlantes/XS-FB1030/xs-fb1030.webp",
     "/parlantes/XS-FB1030/xs-fb1030-frente.webp",
@@ -2863,8 +2863,8 @@
   "slug": "parlantes-pervoi-xs-fb1630-6-pulgadas-3-vias-para-carro",
   "name": "Parlantes Pervoi XS-FB1630 6 Pulgadas 3 Vías para Carro (Par) - Graves Potentes, Opción Económica (420W)",
   "category": "parlantes",
-  "price": 0,
-  "oldPrice": 0,
+  "price": 60,
+  "oldPrice": 100,
       "image": [
     "/parlantes/XS-FB1630/xs-fb1630.webp",
     "/parlantes/XS-FB1630/xs-fb1630-frente.webp",
@@ -6611,7 +6611,7 @@
   "slug": "seguro-pedal-para-carro-safari-freno-embrague",
   "name": "Seguro de Pedal para Carro Safari - Freno y Embrague",
   "category": "seguros-timon-pedal",
-  "price": 70,
+  "price": 50,
   "oldPrice": 110,
   "image": [
     "/seguros-de-timon/seguro-1/seguro-pedal-freno.webp",
@@ -7252,8 +7252,8 @@
   "slug": "foco-led-h4-enl-en80-lupa-proyectora-200w-240000lm",
   "name": "Foco LED H4 ENL EN80 con Lupa Proyectora - 200W 240,000LM",
   "category": "focos-led-h4-para-auto",
-  "price": 0,
-  "oldPrice": 0,
+  "price": 170,
+  "oldPrice": 210,
         "image": [
     "/focos/enl-led-en80/foco-enl-led-en80.webp",
     "/focos/enl-led-en80/caja-enl-led-en80.webp"
@@ -7298,8 +7298,8 @@
   "slug": "kit-foco-led-h4-iron-dakar-ir100-blanco-45000lm",
   "name": "Kit Foco LED H4 Iron Dakar IR100 Blanco 6500K - 55W 45,000LM",
   "category": "focos-led-h4-para-auto",
-  "price": 0,
-  "oldPrice": 0,
+  "price": 160,
+  "oldPrice": 200,
       "image": [
     "/focos/IR100-Dakar/foco-ir100-dakar.webp",
     "/focos/IR100-Dakar/caja-y-focos-ir100-dakar.webp",
