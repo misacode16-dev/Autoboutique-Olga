@@ -5193,15 +5193,17 @@
 
 {
     "slug": "alarma-autorus-bt-a20-y-bt-a21-bluetooth-para-carro",
-    "name": "Alarma Autorus BT-A20 y BT-A21 Bluetooth para Carro - Controla y Protege tu Auto desde tu Celular",
+    "name": "Alarma Autorus BT-A20 y BT-A21 gota Bluetooth para Carro - Controla y Protege tu Auto desde tu Celular",
     "category": "alarma-autorus",
     "price": 110,
     "oldPrice": 150,
     "image": [
+      "/alarmas/autorus/alarma-autorus.webp",
       "/alarmas/autorus/bt-a20/alarma-autorus-bt-a20.webp",
       "/alarmas/autorus/bt-a20/control-alarma-autorus-bt-a20.webp"
     ],
     "images": [
+      "/alarmas/autorus/alarma-autorus-mini.webp",
       "/alarmas/autorus/bt-a20/alarma-autorus-bt-a20-mini.webp",
       "/alarmas/autorus/bt-a20/control-alarma-autorus-bt-a20-mini.webp"
     ],
@@ -5288,17 +5290,19 @@
 
 {
   "slug": "alarma-autorus-a5-llave-flip-bluetooth-para-auto",
-  "name": "Alarma Autorus A5 con Llave Flip para Auto - Bluetooth, Seguros Eléctricos y App desde tu Celular",
+  "name": "Alarma Autorus A5 con Llave Flip para Auto Toyota, Nissan, Kia y Hyundai - Bluetooth, Seguros Eléctricos y App desde tu Celular",
   "category": "alarma-autorus",
   "price": 130,
   "oldPrice": 180,
   "image": [
+    "/alarmas/llave-flip-autorus/alarma-flip-autorus.webp",
     "/alarmas/llave-flip-autorus/toyota/alarma-autorus-toyota.webp",
     "/alarmas/llave-flip-autorus/toyota/caja-alarma-llave flip-autorus-toyota.webp",
     "/alarmas/llave-flip-autorus/toyota/controles-alarma-autorus-toyota.webp",
     "/alarmas/llave-flip-autorus/toyota/llave-flip-autorus-toyota.webp"
   ],
   "images": [
+    "/alarmas/llave-flip-autorus/alarma-flip-autorus-mini.webp",
     "/alarmas/llave-flip-autorus/toyota/alarma-autorus-toyota-mini.webp",
     "/alarmas/llave-flip-autorus/toyota/caja-alarma-llave flip-autorus-toyota-mini.webp",
     "/alarmas/llave-flip-autorus/toyota/controles-alarma-autorus-toyota-mini.webp",
@@ -5431,11 +5435,13 @@
   "price": 100,
   "oldPrice": 150,
   "image": [
+    "/alarmas/genius/alarma-genius.webp",
     "/alarmas/genius/g24se-a/alarma-genius-g24se-a.webp",
     "/alarmas/genius/g24se-a/caja-alarma-genius-g24se-a.webp",
     "/alarmas/genius/g24se-a/controles-genius-g24se-a.webp"
   ],
   "images": [
+    "/alarmas/genius/alarma-genius-mini.webp",
     "/alarmas/genius/g24se-a/alarma-genius-g24se-a-mini.webp",
     "/alarmas/genius/g24se-a/caja-alarma-genius-g24se-a-mini.webp",
     "/alarmas/genius/g24se-a/controles-genius-g24se-a-mini.webp"
@@ -5618,11 +5624,13 @@
   "price": 90,
   "oldPrice": 120,
   "image": [
+    "/alarmas/quality/alarma-quality.webp",
     "/alarmas/quality/q-110/alarma-quality-q-110.webp",
     "/alarmas/quality/q-110/componentes-alarma-quality-q-110.webp",
     "/alarmas/quality/q-110/control-alarma-quality-q-110.webp"
   ],
   "images": [
+    "/alarmas/quality/alarma-quality-mini.webp",
     "/alarmas/quality/q-110/alarma-quality-q-110-mini.webp",
     "/alarmas/quality/q-110/componentes-alarma-quality-q-110-mini.webp",
     "/alarmas/quality/q-110/control-alarma-quality-q-110-mini.webp"
