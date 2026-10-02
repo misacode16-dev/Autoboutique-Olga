@@ -1,6 +1,10 @@
 ---
 // components/Filters.astro
 import { SlidersHorizontal, X, ChevronDown } from '@lucide/astro';
+import products from '../data/products.json';
+
+// Tope del slider = precio más alto del catálogo, redondeado a la decena
+const priceCeiling = Math.ceil(Math.max(...products.map((p) => p.price)) / 10) * 10;
 
 const { categories, initialCategory = "", showCategoryFilter = true } = Astro.props;
 // Nota: ya no se usa un prop `vehicles` con la taxonomía global — el filtro de
@@ -106,13 +110,13 @@ const { categories, initialCategory = "", showCategoryFilter = true } = Astro.pr
     <input
       type="range"
       min="0"
-      max="1000"
+      max={priceCeiling}
       step="10"
-      value="1000"
+      value={priceCeiling}
       id="price-range"
       class="w-full accent-[#ff5b00]"
     />
-    <p class="text-[0.88rem] text-[#555] mt-2">Hasta S/ <span id="price-range-value">1000</span></p>
+    <p class="text-[0.88rem] text-[#555] mt-2">Hasta S/ <span id="price-range-value">{priceCeiling}</span></p>
   </div>
 
 <!-- Botón aplicar — solo móvil, cierra el panel y muestra los resultados ya filtrados -->
@@ -136,7 +140,7 @@ const { categories, initialCategory = "", showCategoryFilter = true } = Astro.pr
   const vehicleFilterBlock = document.getElementById("vehicle-filter-block");
 
   let activeCategory = "";
-  let maxPrice = 1000;
+  let maxPrice = priceRange ? parseFloat(priceRange.max) : Infinity;
   let vehicleSelection = { brand: "", model: "" };
 
   // ---- Panel móvil (toggle / overlay / cerrar) ----
@@ -292,9 +296,8 @@ const { categories, initialCategory = "", showCategoryFilter = true } = Astro.pr
   function applyFilters() {
     const cards = document.querySelectorAll("[data-product-card]");
     cards.forEach((card) => {
-      const btn = card.querySelector("[data-add-to-cart]");
       const category = card.getAttribute("data-category");
-      const price = parseFloat(btn?.getAttribute("data-price") || "0");
+      const price = parseFloat(card.getAttribute("data-price") || "0");
 
       let productFiltros = [];
       try {

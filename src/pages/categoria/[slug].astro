@@ -104,6 +104,9 @@ const categorySchemas = generateCategorySchemas(category, categoryProducts);
   const selectedSort = document.getElementById('selected-sort');
   const grid = document.getElementById('products-grid');
 
+  // Orden "predeterminado" = el orden con el que cargó la página
+  const defaultOrder = grid ? Array.from(grid.querySelectorAll('[data-product-card]')) : [];
+
   function toggleMenu() {
     const isOpen = dropdown?.classList.toggle('open');
     if (menu) menu.style.display = isOpen ? 'block' : 'none';
@@ -123,15 +126,17 @@ const categorySchemas = generateCategorySchemas(category, categoryProducts);
 
   function sortGrid(value) {
     if (!grid) return;
-    const cards = Array.from(grid.querySelectorAll('[data-product-card]'));
+    let cards = Array.from(grid.querySelectorAll('[data-product-card]'));
 
-    const getPrice = (card) =>
-      parseFloat(card.querySelector('[data-add-to-cart]')?.getAttribute('data-price') || '0');
+    const getPrice = (card) => parseFloat(card.getAttribute('data-price') || '0');
 
     if (value === 'price-asc') {
       cards.sort((a, b) => getPrice(a) - getPrice(b));
     } else if (value === 'price-desc') {
       cards.sort((a, b) => getPrice(b) - getPrice(a));
+    } else {
+      // 'default' -> vuelve al orden con el que cargó la página
+      cards = [...defaultOrder];
     }
 
     cards.forEach((card) => grid.appendChild(card));

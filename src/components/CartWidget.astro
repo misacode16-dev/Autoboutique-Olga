@@ -8,7 +8,7 @@ import { ShoppingCart, X } from '@lucide/astro';
   type="button"
   id="cart-toggle"
   aria-label="Abrir carrito"
-  class="fixed bottom-6 right-6 z-[200] bg-[#ff5100]  text-white rounded-full w-14 h-14 flex items-center justify-center hover:brightness-110 transition-all shadow-[0_4px_12px_rgba(0,0,0,0.5)] hover:shadow-[0_8px_20px_rgba(0,0,0,0.6)]"
+  class="fixed bottom-6 right-6 z-[200] bg-[#ff5b00]  text-white rounded-full w-14 h-14 flex items-center justify-center hover:brightness-110 transition-all shadow-[0_4px_12px_rgba(0,0,0,0.5)] hover:shadow-[0_8px_20px_rgba(0,0,0,0.6)]"
 >
   <ShoppingCart class="icon-md" />
   <span
@@ -36,7 +36,7 @@ import { ShoppingCart, X } from '@lucide/astro';
   <div class="border-t border-[#e5e5e5] px-5 py-4">
     <div class="flex justify-between items-center mb-4">
       <span class="font-semibold text-[#1f1f1f]">Total</span>
-      <span id="cart-total" class="font-bold text-xl text-[#ff5100]">S/ 0.00</span>
+      <span id="cart-total" class="font-bold text-xl text-[#ff5b00]">S/ 0.00</span>
     </div>
     <a
       id="cart-checkout"
@@ -123,7 +123,15 @@ import { ShoppingCart, X } from '@lucide/astro';
       cartCountEl.classList.toggle("hidden", totalItems === 0);
     }
     if (cartTotalEl) cartTotalEl.textContent = `S/ ${totalPrice.toFixed(2)}`;
-    if (checkoutBtn) checkoutBtn.setAttribute("href", buildWhatsAppOrderLink(cart));
+    if (checkoutBtn) {
+      // Con el carrito vacío el botón queda desactivado (antes abría un chat sin mensaje)
+      const isEmpty = cart.length === 0;
+      checkoutBtn.setAttribute("href", isEmpty ? "#" : buildWhatsAppOrderLink(cart));
+      checkoutBtn.setAttribute("aria-disabled", String(isEmpty));
+      checkoutBtn.setAttribute("tabindex", isEmpty ? "-1" : "0");
+      checkoutBtn.classList.toggle("pointer-events-none", isEmpty);
+      checkoutBtn.classList.toggle("opacity-40", isEmpty);
+    }
 
     if (!cartItemsEl) return;
     cartItemsEl.innerHTML = "";
@@ -141,7 +149,7 @@ import { ShoppingCart, X } from '@lucide/astro';
         <img src="${item.image}" alt="${item.name}" class="w-16 h-16 object-cover rounded-md" />
         <div class="flex-1">
           <p class="text-sm font-semibold text-[#1f1f1f]">${item.name}</p>
-          <p class="text-sm text-[#ff5100] font-bold">S/ ${item.price.toFixed(2)}</p>
+          <p class="text-sm text-[#ff5b00] font-bold">S/ ${item.price.toFixed(2)}</p>
           <div class="flex items-center gap-2 mt-1">
             <button type="button" class="qty-decrease border border-[#e5e5e5] rounded w-6 h-6 flex items-center justify-center" data-cart-id="${rowId}">−</button>
             <span class="text-sm">${item.quantity}</span>
@@ -201,6 +209,7 @@ import { ShoppingCart, X } from '@lucide/astro';
         name: btn.dataset.name,
         price: parseFloat(btn.dataset.price),
         image: btn.dataset.image,
+        sku: btn.dataset.sku || "",
       },
       quantity
     );

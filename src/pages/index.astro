@@ -1,13 +1,29 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import { getHomePageSchema } from '../utils/schemas.js';
+import products from '../data/products.json';
 import Carousel from '../Home/Carousel.astro';
 import PopularCategories from '../Home/PopularCategories.astro';
 import PopularProducts from '../Home/PopularProducts.astro';
 import Brands from '../Home/Brands.astro';
 import BestSellers from '../Home/BestSellers.astro';
 
-const homeSchema = getHomePageSchema(); 
+const homeSchema = getHomePageSchema();
+
+// Se baraja UNA sola vez y se reparte: así ningún producto sale en las dos
+// secciones. Solo se consideran productos con stock.
+function shuffle(array) {
+  const copy = [...array];
+  for (let i = copy.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [copy[i], copy[j]] = [copy[j], copy[i]];
+  }
+  return copy;
+}
+
+const shuffled = shuffle(products.filter((p) => p.stock));
+const popularProducts = shuffled.slice(0, 5);
+const bestSellerProducts = shuffled.slice(5, 15);
 ---
 
 <Layout
@@ -19,8 +35,8 @@ const homeSchema = getHomePageSchema();
   <main>
     <Carousel />
     <PopularCategories />
-    <PopularProducts />
+    <PopularProducts products={popularProducts} />
     <Brands />
-    <BestSellers />
+    <BestSellers products={bestSellerProducts} />
   </main>
 </Layout>

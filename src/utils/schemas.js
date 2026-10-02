@@ -35,7 +35,7 @@ const BUSINESS = {
 
     // Rango de precios del catálogo (texto libre).
   // Ajusta los valores según tus productos más baratos y más caros.
-  priceRange: "S/ 20 - S/ 500",   // ← AÑADIR ESTA LÍNEA
+  priceRange: "S/ 20 - S/ 530",   // ← AÑADIR ESTA LÍNEA
 
   // Para tienda de repuestos: "AutoPartsStore" es más específico que "AutomotiveBusiness"
   // (es un subtipo de Store, y Google lo reconoce igual de bien para rich results).

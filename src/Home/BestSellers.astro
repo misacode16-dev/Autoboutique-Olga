@@ -1,25 +1,15 @@
 ---
 // components/BestSellers.astro
-import products from '../data/products.json';
 import categories from '../data/categories.json';
 import { getCoverImage } from '../utils/product-images.js';
 
-const LIMIT = 10;
+// Los productos los elige el home (pages/index.astro) para que
+// "Productos populares" y "Lo más vendido" nunca repitan el mismo producto.
+const { products: displayProducts = [] } = Astro.props;
 
 function categoryName(slug) {
   return categories.find((c) => c.slug === slug)?.name ?? '';
 }
-
-function shuffle(array) {
-  const copy = [...array];
-  for (let i = copy.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [copy[i], copy[j]] = [copy[j], copy[i]];
-  }
-  return copy;
-}
-
-const displayProducts = shuffle(products).slice(0, LIMIT);
 ---
 
 <section class="max-w-[1200px] mx-auto px-[15px] py-[30px] pb-[50px]">

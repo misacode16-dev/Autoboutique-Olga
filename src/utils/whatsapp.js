@@ -4,38 +4,42 @@
 
 export const WHATSAPP_NUMBER = "51960884840"; // sin +, sin espacios
 
-// Construye la URL absoluta de un producto a partir de su slug.
-// Usa window.location.origin porque esto siempre corre en el navegador
-// (tanto el botón de la ficha de producto como el carrito son client-side).
+// Dominio real de la tienda. Se usa SIEMPRE este (no window.location.origin)
+// para que los links del mensaje no salgan con localhost, www. o una preview.
+export const SITE_URL = "https://autoboutiqueolga.com";
+
 function productUrl(slug) {
-  const origin = typeof window !== "undefined" ? window.location.origin : "";
-  return `${origin}/tienda/${slug}`;
+  return `${SITE_URL}/tienda/${slug}`;
 }
 
 /**
  * Mensaje para "Comprar por WhatsApp" en la ficha de un solo producto.
- * @param {{ name: string, price: number, slug: string }} product
+ * @param {{ name: string, price: number, slug: string, quantity?: number, sku?: string }} product
  * @returns {string} URL de wa.me lista para abrir
  */
 export function buildSingleProductWhatsAppLink(product) {
+  const quantity = Number.isFinite(product.quantity) && product.quantity > 0 ? product.quantity : 1;
   const url = productUrl(product.slug);
+  const lineTotal = product.price * quantity;
+  const label = quantity > 1 ? `${quantity} productos de ${product.name}` : product.name;
 
-  const message = [
+  const lines = [
     "Hola estoy interesado en el siguiente producto:",
     "",
-    `*${product.name}*`,
-    `*Precio:* S/ ${product.price.toFixed(2)}`,
-    `*URL:* ${url}`,
-    "",
-    "Gracias!",
-  ].join("\n");
+    `*${label}*`,
+  ];
+  if (product.sku) lines.push(`*SKU:* ${product.sku}`);
+  const priceLine = quantity > 1
+    ? `*Precio:* S/ ${product.price.toFixed(2)} c/u → S/ ${lineTotal.toFixed(2)}`
+    : `*Precio:* S/ ${lineTotal.toFixed(2)}`;
+  lines.push(priceLine, `*URL:* ${url}`, "", "Gracias!");
 
-  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(lines.join("\n"))}`;
 }
 
 /**
  * Mensaje para el carrito (uno o varios productos), usado por CartWidget.
- * @param {Array<{name: string, price: number, quantity: number, slug: string}>} items
+ * @param {Array<{name: string, price: number, quantity: number, slug: string, sku?: string}>} items
  * @returns {string} URL de wa.me lista para abrir
  */
 export function buildWhatsAppOrderLink(items) {
@@ -50,11 +54,13 @@ export function buildWhatsAppOrderLink(items) {
     const productLabel =
       item.quantity > 1 ? `${item.quantity} productos de ${item.name}` : item.name;
 
-    return [
-      `*${productLabel}*`,
-      `*Precio:* S/ ${lineTotal.toFixed(2)}`,
-      `*URL:* ${url}`,
-    ].join("\n");
+    const lines = [`*${productLabel}*`];
+    if (item.sku) lines.push(`*SKU:* ${item.sku}`);
+    const priceLine = item.quantity > 1
+      ? `*Precio:* S/ ${item.price.toFixed(2)} c/u → S/ ${lineTotal.toFixed(2)}`
+      : `*Precio:* S/ ${lineTotal.toFixed(2)}`;
+    lines.push(priceLine, `*URL:* ${url}`);
+    return lines.join("\n");
   });
 
   const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);

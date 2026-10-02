@@ -49,13 +49,13 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
 
       <!-- GALERÍA -->
       <div class="flex flex-col items-center">
-        <div class="w-full border border-[#f0f0f0] rounded-lg flex items-center justify-center">
-          <img id="main-product-img" src={gallery[0].full} alt={name} class="max-w-full max-h-full object-cover" />
-        </div>
+<div class="w-full aspect-[4/3] border border-[#f0f0f0] rounded-lg flex items-center justify-center">
+  <img id="main-product-img" src={gallery[0].full} alt={name} fetchpriority="high" decoding="async" class="w-full h-full object-contain" />
+</div>
 
         <div id="thumbnail-row" class="flex gap-3 mt-5 w-full justify-start">
           {gallery.length > 1 && gallery.map((g, i) => (
-            <button type="button" class={`thumb-item w-20 h-20 border rounded-md p-1.5 flex items-center justify-center bg-[#fff] transition-colors hover:border-[#cbd5e1] ${i === 0 ? 'border-[#ff5100]' : 'border-[#e2e8f0]'}`} data-src={g.full} data-alt={initialName}>
+            <button type="button" class={`thumb-item w-20 h-20 border rounded-md p-1.5 flex items-center justify-center bg-[#fff] transition-colors hover:border-[#cbd5e1] ${i === 0 ? 'border-[#ff5b00]' : 'border-[#e2e8f0]'}`} data-src={g.full} data-alt={initialName}>
               <img src={g.thumb} alt={initialName} class="max-w-full max-h-full object-contain" />
             </button>
           ))}
@@ -67,7 +67,7 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
         <h1 class="text-[1.85rem] font-extrabold text-[#111111] leading-[1.3] mb-3">{name}</h1>
 
         <div class="flex items-center gap-3">
-          <span id="product-price-value" class="text-[2.1rem] font-bold text-[#ff5100]">S/ {price.toFixed(2)}</span>
+          <span id="product-price-value" class="text-[2.1rem] font-bold text-[#ff5b00]">S/ {price.toFixed(2)}</span>
           <span id="product-oldprice-value" class={`text-[#9c9c9c] line-through text-lg ${oldPrice ? '' : 'hidden'}`}>
             S/ {oldPrice ? oldPrice.toFixed(2) : '0.00'}
           </span>
@@ -81,7 +81,7 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
               {variants.map((v, i) => (
                 <button
                   type="button"
-                  class={`variant-item flex flex-col items-center gap-1.5 border-2 rounded-md p-2 w-[92px] transition-colors hover:border-[#cbd5e1] ${i === 0 ? 'border-[#ff5100]' : 'border-[#e2e8f0]'}`}
+                  class={`variant-item flex flex-col items-center gap-1.5 border-2 rounded-md p-2 w-[92px] transition-colors hover:border-[#cbd5e1] ${i === 0 ? 'border-[#ff5b00]' : 'border-[#e2e8f0]'}`}
                   data-variant-id={v.id}
                   data-label={v.label}
                   data-sku={v.sku}
@@ -121,7 +121,7 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
           {categoryData && (
             <div class="flex items-start text-[0.9rem] leading-[1.4]">
               <span class="font-bold text-[#111111] w-[170px] flex-shrink-0">Categoría:</span>
-              <a href="/tienda" class="font-semibold hover:underline">{categoryData.name}</a>
+              <a href={`/categoria/${category}`} class="font-semibold hover:underline">{categoryData.name}</a>
             </div>
           )}
         </div>
@@ -135,12 +135,12 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
           </div>
 
           <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
-                      <button type="button" id="add-to-cart-btn" class="flex items-center justify-center gap-2 bg-[#000000] text-white font-bold px-4 h-[55px] rounded-md hover:brightness-110 transition-all disabled:opacity-40 disabled:cursor-not-allowed" data-add-to-cart data-qty-input-id="product-qty" data-slug={product.slug} data-cart-id={initialCartId} data-base-name={name} data-name={initialName} data-price={price} data-image={cover} disabled={!stock}>
+                      <button type="button" id="add-to-cart-btn" class="flex items-center justify-center gap-2 bg-[#000000] text-white font-bold px-4 h-[55px] rounded-md hover:brightness-110 transition-all disabled:opacity-40 disabled:cursor-not-allowed" data-add-to-cart data-qty-input-id="product-qty" data-slug={product.slug} data-cart-id={initialCartId} data-base-name={name} data-name={initialName} data-price={price} data-image={cover} disabled={!stock} data-sku={hasVariants ? defaultVariant.sku : sku}>
             <ShoppingCart class="icon-md" />
             {stock ? "Agregar al carrito" : "Agotado"}
           </button>
 
-          <button type="button" id="whatsapp-buy-btn" class="flex items-center justify-center sm:mx-auto gap-2 bg-[#25D366] text-white font-bold px-5 lg:px-8 h-[55px] rounded-md hover:brightness-110 transition-all disabled:opacity-40 disabled:cursor-not-allowed" data-slug={product.slug} data-name={initialName} data-price={price} disabled={!stock}>
+          <button type="button" id="whatsapp-buy-btn" class="flex items-center justify-center sm:mx-auto gap-2 bg-[#25D366] text-white font-bold px-5 lg:px-8 h-[55px] rounded-md hover:brightness-110 transition-all disabled:opacity-40 disabled:cursor-not-allowed" data-slug={product.slug} data-name={initialName} data-price={price} disabled={!stock} data-sku={hasVariants ? defaultVariant.sku : sku}>
             <MessageCircle class="icon-md" />
             Comprar por WhatsApp
           </button>
@@ -150,19 +150,19 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
                       <!-- Información adicional (retiros, envíos, garantía) -->
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-6 text-sm text-[#333]">
   <div class="flex flex-col text-center items-center gap-2">
-    <Store class="w-6 h-6 text-[#ff5100]" />
+    <Store class="w-6 h-6 text-[#ff5b00]" />
     <span>Retiros en tienda</span>
   </div>
   <div class="flex flex-col text-center items-center gap-2">
-    <Truck class="w-6 h-6 text-[#ff5100]" />
+    <Truck class="w-6 h-6 text-[#ff5b00]" />
     <span>Envíos a zona de Lima Metropolitana</span>
   </div>
   <div class="flex flex-col text-center items-center gap-2">
-    <MapPin class="w-6 h-6 text-[#ff5100]" />
+    <MapPin class="w-6 h-6 text-[#ff5b00]" />
     <span>Despachos a provincia el mismo día</span>
   </div>
   <div class="flex flex-col text-center items-center gap-2">
-    <ShieldCheck class="w-6 h-6 text-[#ff5100]" />
+    <ShieldCheck class="w-6 h-6 text-[#ff5b00]" />
     <span>Garantía 12 meses</span>
   </div>
 </div>
@@ -171,10 +171,10 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
 <div class="mt-6">
   <p class="font-bold text-sm text-[#111] mb-2">Medios de Pago:</p>
   <div class="flex flex-wrap gap-4">
-    <img src="/visa.png" alt="Visa" class="h-12 w-auto object-contain" />
-    <img src="/mastercard.png" alt="Mastercard" class="h-12 w-auto object-contain" />
-    <img src="/yape.png" alt="Yape" class="h-12 w-auto object-contain" />
-    <img src="/plin.png" alt="Plin" class="h-12 w-auto object-contain" />
+    <img src="/visa.png" alt="Visa" class="h-12 w-auto object-contain" loading="lazy" />
+    <img src="/mastercard.png" alt="Mastercard" class="h-12 w-auto object-contain" loading="lazy" />
+    <img src="/yape.png" alt="Yape" class="h-12 w-auto object-contain" loading="lazy" />
+    <img src="/plin.png" alt="Plin" class="h-12 w-auto object-contain" loading="lazy" />
   </div>
 </div>
       </div>
@@ -184,9 +184,9 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
     <section class="my-[60px] mb-10">
       <div class="flex gap-[35px] border-b border-[#e2e8f0] mb-[30px]">
         <!-- Descripcion detallada del producto -->
-        <button type="button" class="tab-btn bg-none border-none text-[1.1rem] font-bold pb-3 cursor-pointer relative text-[#ff5100]" data-tab="tab-description">
+        <button type="button" class="tab-btn bg-none border-none text-[1.1rem] font-bold pb-3 cursor-pointer relative text-[#ff5b00]" data-tab="tab-description">
           Descripción
-          <span class="absolute -bottom-px left-0 w-full h-[3px] bg-[#ff5100] rounded-t-sm"></span>
+          <span class="absolute -bottom-px left-0 w-full h-[3px] bg-[#ff5b00] rounded-t-sm"></span>
         </button>
         {specs && specs.length > 0 && (
           <button type="button" class="tab-btn bg-none border-none text-[1.1rem] font-bold pb-3 cursor-pointer relative text-[#424b58] hover:text-[#1e2633] transition-colors" data-tab="tab-specs">Especificación</button>
@@ -230,7 +230,7 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
               </div>
               <div class="flex flex-col gap-2">
                 <h3 class="text-[0.9rem] font-bold text-[#000000] leading-[1.35] line-clamp-2 h-[2.7em] overflow-hidden">{p.name}</h3>
-                <span class="text-[#ff5100] font-extrabold text-[0.98rem]">S/ {p.price.toFixed(2)}</span>
+                <span class="text-[#ff5b00] font-extrabold text-[0.98rem]">S/ {p.price.toFixed(2)}</span>
               </div>
             </a>
           ))}
@@ -260,11 +260,11 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
       mainImg.setAttribute('alt', alt || '');
     }
     thumbnailRow?.querySelectorAll('.thumb-item').forEach((t) => {
-      t.classList.remove('border-[#ff5100]');
+      t.classList.remove('border-[#ff5b00]');
       t.classList.add('border-[#e2e8f0]');
     });
     btn.classList.remove('border-[#e2e8f0]');
-    btn.classList.add('border-[#ff5100]');
+    btn.classList.add('border-[#ff5b00]');
   }
 
   function bindThumb(btn) {
@@ -283,7 +283,7 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
     gallery.forEach((g, i) => {
       const btn = document.createElement('button');
       btn.type = 'button';
-      btn.className = `thumb-item w-20 h-20 border rounded-md p-1.5 flex items-center justify-center bg-[#fff] transition-colors hover:border-[#cbd5e1] ${i === 0 ? 'border-[#ff5100]' : 'border-[#e2e8f0]'}`;
+      btn.className = `thumb-item w-20 h-20 border rounded-md p-1.5 flex items-center justify-center bg-[#fff] transition-colors hover:border-[#cbd5e1] ${i === 0 ? 'border-[#ff5b00]' : 'border-[#e2e8f0]'}`;
       btn.setAttribute('data-src', g.full);
       btn.setAttribute('data-alt', altText);
       btn.innerHTML = `<img src="${g.thumb}" alt="${altText}" class="max-w-full max-h-full object-contain" />`;
@@ -349,11 +349,11 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
 
       // estilo activo del selector
       document.querySelectorAll('.variant-item').forEach((v) => {
-        v.classList.remove('border-[#ff5100]');
+        v.classList.remove('border-[#ff5b00]');
         v.classList.add('border-[#e2e8f0]');
       });
       item.classList.remove('border-[#e2e8f0]');
-      item.classList.add('border-[#ff5100]');
+      item.classList.add('border-[#ff5b00]');
 
       // botones agregar/whatsapp
       [addToCartBtn, whatsappBtn].forEach((btn) => {
@@ -361,6 +361,7 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
         if (fullName) btn.dataset.name = fullName;
         if (Number.isFinite(price)) btn.dataset.price = String(price);
         if (gallery[0]?.full) btn.dataset.image = gallery[0].full;
+        if (sku) btn.dataset.sku = sku;
       });
       if (addToCartBtn && cartId) addToCartBtn.dataset.cartId = cartId;
     });
@@ -391,7 +392,7 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
         pane.classList.remove('block');
       });
       document.querySelectorAll('.tab-btn').forEach((b) => {
-        b.classList.remove('text-[#ff5100]');
+        b.classList.remove('text-[#ff5b00]');
         b.classList.add('text-[#424b58]');
         b.querySelector('span.absolute')?.remove();
       });
@@ -403,10 +404,10 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
       }
 
       btn.classList.remove('text-[#424b58]');
-      btn.classList.add('text-[#ff5100]');
+      btn.classList.add('text-[#ff5b00]');
 
       const indicator = document.createElement('span');
-      indicator.className = 'absolute -bottom-px left-0 w-full h-[3px] bg-[#ff5100] rounded-t-sm';
+      indicator.className = 'absolute -bottom-px left-0 w-full h-[3px] bg-[#ff5b00] rounded-t-sm';
       btn.appendChild(indicator);
     });
   });

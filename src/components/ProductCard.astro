@@ -6,12 +6,14 @@ import { getCoverImage } from '../utils/product-images.js';
 const { product, categoryName } = Astro.props;
 const { slug, name, price, oldPrice, stock } = product;
 const cover = getCoverImage(product);
+const hasVariants = Array.isArray(product.variants) && product.variants.length > 1;
 ---
 
 <article
   class="border border-[#eee] rounded-lg p-4 relative flex flex-col bg-[#fff] hover:shadow-[0_4px_18px_rgba(0,0,0,0.08)] transition-shadow"
   data-product-card
   data-category={product.category}
+  data-price={price}
   data-filtros={JSON.stringify(product.filtros ?? [])}
 >
   <a href={`/tienda/${slug}`} class="block">
@@ -36,20 +38,30 @@ const cover = getCoverImage(product);
   </div>
 
   {!stock && (
-    <span class="text-[#ff5100] text-xs font-semibold mb-1">Agotado</span>
+    <span class="text-[#ff5b00] text-xs font-semibold mb-1">Agotado</span>
   )}
 
-  <button
-    type="button"
-    class="mt-auto pt-3 flex items-center justify-center gap-2 bg-[#ff5100] text-white text-sm font-semibold py-2 rounded-md hover:brightness-110 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
-    data-add-to-cart
-    data-slug={slug}
-    data-name={name}
-    data-price={price}
-    data-image={cover}
-    disabled={!stock}
-  >
-    <ShoppingCart class="icon-sm" />
-    Agregar
-  </button>
+  {hasVariants ? (
+    <a
+      href={`/tienda/${slug}`}
+      class="mt-auto pt-3 flex items-center justify-center gap-2 bg-[#111111] text-white text-sm font-semibold py-2 rounded-md hover:brightness-125 transition-all"
+    >
+      Ver opciones
+    </a>
+  ) : (
+    <button
+      type="button"
+      class="mt-auto pt-3 flex items-center justify-center gap-2 bg-[#ff5b00] text-white text-sm font-semibold py-2 rounded-md hover:brightness-110 transition-all disabled:opacity-40 disabled:cursor-not-allowed"
+      data-add-to-cart
+      data-slug={slug}
+      data-name={name}
+      data-price={price}
+      data-image={cover}
+      data-sku={product.sku ?? ''}
+      disabled={!stock}
+    >
+      <ShoppingCart class="icon-sm" />
+      Agregar
+    </button>
+  )}
 </article>

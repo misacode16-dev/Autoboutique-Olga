@@ -20,6 +20,26 @@ const {
   priceCurrency = "PEN",
   availability = null, // "in stock" | "out of stock"
 } = Astro.props;
+
+// Las redes sociales (WhatsApp, Facebook, X) necesitan la URL COMPLETA de la
+// imagen. Las fichas mandan rutas relativas ("/portaplaca/...webp"), así que
+// aquí se convierten siempre a absolutas.
+const SITE_URL = "https://autoboutiqueolga.com";
+const BRAND_OG_IMAGE = "/logo-open-graph.png"; // 1200x630
+
+const toAbsolute = (path) => {
+  if (!path || typeof path !== "string") return "";
+  return path.startsWith("http") ? path : `${SITE_URL}${path.startsWith("/") ? "" : "/"}${path}`;
+};
+
+const ogImageRaw = ogImage || image;
+const twitterImageRaw = twitterImage || image;
+const ogImageUrl = toAbsolute(ogImageRaw);
+const twitterImageUrl = toAbsolute(twitterImageRaw);
+
+// 1200x630 solo es verdad para la imagen de marca. Las fotos de producto
+// tienen otras medidas, así que en ese caso no se declaran.
+const ogImageIsBrand = ogImageRaw === BRAND_OG_IMAGE;
 ---
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta charset="UTF-8" />
@@ -38,9 +58,13 @@ const {
 <meta property="og:type" content={ogType} />
 <meta property="og:title" content={ogTitle || title} />
 <meta property="og:description" content={ogDescription || description} />
-<meta property="og:image" content={ogImage || image} />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
+<meta property="og:image" content={ogImageUrl} />
+{ogImageIsBrand && (
+  <>
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+  </>
+)}
 <meta property="og:image:alt" content={alt} />
 <meta property="og:url" content={url} />
 <meta property="og:locale" content="es_PE" />
@@ -59,7 +83,7 @@ const {
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={twitterTitle || title} />
 <meta name="twitter:description" content={twitterDescription || description} />
-<meta name="twitter:image" content={twitterImage || image} />
+<meta name="twitter:image" content={twitterImageUrl} />
 <meta name="twitter:image:alt" content={alt} />
 
 <meta name="geo.region" content="PE-LIM" />
