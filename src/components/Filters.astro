@@ -240,7 +240,7 @@ const { categories, initialCategory = "", showCategoryFilter = true } = Astro.pr
 
   function refreshVehicleSelects() {
     fillSelect(brandSelect, uniqueValues(matchingVehicles("brand"), "brand"), "Seleccionar marca", vehicleSelection.brand);
-    fillSelect(modelSelect, uniqueValues(matchingVehicles("model"), "model"), "Modelo de coche", vehicleSelection.model);
+    fillSelect(modelSelect, uniqueValues(matchingVehicles("model"), "model"), "Modelo de productos", vehicleSelection.model);
 
     const hasSelection = Object.values(vehicleSelection).some(Boolean);
     resetVehicleBtn?.classList.toggle("hidden", !hasSelection);

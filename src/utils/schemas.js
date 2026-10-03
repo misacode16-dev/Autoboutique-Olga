@@ -70,7 +70,7 @@ const BUSINESS = {
 
   sameAs: [
     "https://www.facebook.com/profile.php?id=61563385722004",
-    "https://www.tiktok.com/@autoboutiqueolga?is_from_webapp=1&sender_device=pc",
+    "https://www.tiktok.com/@autoboutiqueolga",
   ],
 
   

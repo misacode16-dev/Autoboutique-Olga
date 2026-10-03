@@ -13,39 +13,233 @@ function categoryName(slug) {
 ---
 
 <section class="max-w-[1200px] mx-auto px-[15px] py-[30px] pb-[50px]">
+
+  <!-- CABECERA -->
   <div class="flex justify-between items-center mb-[30px]">
-    <h2 class="text-[22px] font-extrabold text-brand-dark">Productos populares</h2>
+
+    <h2 class="text-[22px] font-extrabold text-brand-dark">
+      Productos populares
+    </h2>
+
+    <!-- FLECHAS -->
+    <div class="flex items-center gap-2">
+
+      <button
+        id="popular-prev"
+        type="button"
+        aria-label="Productos anteriores"
+        class="w-10 h-10 flex items-center justify-center rounded-lg border border-brand-light bg-brand-white text-brand-dark transition-all duration-200 hover:bg-brand-dark hover:text-white disabled:opacity-30 disabled:cursor-not-allowed"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+
+      <button
+        id="popular-next"
+        type="button"
+        aria-label="Siguientes productos"
+        class="w-10 h-10 flex items-center justify-center rounded-lg border border-brand-light bg-brand-white text-brand-dark transition-all duration-200 hover:bg-brand-dark hover:text-white disabled:opacity-30 disabled:cursor-not-allowed"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <polyline points="9 18 15 12 9 6"></polyline>
+        </svg>
+      </button>
+
+    </div>
   </div>
-  <div id="popular-products-grid" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2.5">
+
+  <!-- CARRUSEL -->
+  <div
+    id="popular-products-carousel"
+    class="flex gap-2.5 overflow-x-auto scroll-smooth snap-x snap-mandatory pb-2"
+    style="scrollbar-width: none;"
+  >
+
     {displayProducts.map((p) => (
       <a
         href={`/tienda/${p.slug}`}
-        class="p-5 border border-brand-light rounded-2xl flex flex-col relative bg-brand-white shadow-[0_4px_12px_rgba(0,0,0,0.06)] transition-all duration-350 hover:shadow-[0_12px_32px_rgba(0,0,0,0.14)] hover:-translate-y-1.5 overflow-hidden group"
+        class="
+          shrink-0
+          snap-start
+
+          basis-full
+          sm:basis-[calc((100%-10px)/2)]
+          md:basis-[calc((100%-20px)/3)]
+          lg:basis-[calc((100%-30px)/4)]
+
+          p-5
+          border border-brand-light
+          rounded-2xl
+          flex flex-col
+          relative
+          bg-brand-white
+          shadow-[0_4px_12px_rgba(0,0,0,0.06)]
+          transition-all
+          duration-350
+          hover:shadow-[0_12px_32px_rgba(0,0,0,0.14)]
+          hover:-translate-y-1.5
+          overflow-hidden
+          group
+        "
       >
+
+        <!-- IMAGEN -->
         <div class="h-[130px] flex items-center justify-center my-2.5 mb-4">
-          <img src={getCoverImage(p)} alt={p.name} class="max-h-full max-w-full object-contain transition-transform duration-350 group-hover:scale-105" />
+          <img
+            src={getCoverImage(p)}
+            alt={p.name}
+            class="max-h-full max-w-full object-contain transition-transform duration-350 group-hover:scale-105"
+          />
         </div>
-        <span class="text-[11px] text-[#535353] uppercase tracking-[0.04em] mb-1.5">{categoryName(p.category)}</span>
-        <h4 class="text-[13px] font-bold text-brand-dark leading-[1.35] mb-2.5 h-9 overflow-hidden line-clamp-2">{p.name}</h4>
+
+        <!-- CATEGORÍA -->
+        <span class="text-[11px] text-[#535353] uppercase tracking-[0.04em] mb-1.5">
+          {categoryName(p.category)}
+        </span>
+
+        <!-- NOMBRE -->
+        <h4 class="text-[13px] font-bold text-brand-dark leading-[1.35] mb-2.5 h-9 overflow-hidden line-clamp-2">
+          {p.name}
+        </h4>
+
+        <!-- PRECIO -->
         <div class="flex items-center gap-1.5">
-          <span class="text-[14px] font-extrabold text-[#ff5b00]">S/ {p.price.toFixed(2)}</span>
+          <span class="text-[14px] font-extrabold text-[#ff5b00]">
+            S/ {p.price.toFixed(2)}
+          </span>
         </div>
+
       </a>
     ))}
+
   </div>
+
 </section>
 
 <script>
-  // Vuelve a barajar el orden de estas tarjetas en cada visita/recarga
-  // (Fisher-Yates), aunque el conjunto de productos ya viene fijado desde
-  // el build.
-  const grid = document.getElementById('popular-products-grid');
-  if (grid) {
-    const cards = Array.from(grid.children);
+  // ==========================================
+  // CARRUSEL DE PRODUCTOS POPULARES
+  // ==========================================
+
+  const carousel = document.getElementById('popular-products-carousel');
+  const prevButton = document.getElementById('popular-prev');
+  const nextButton = document.getElementById('popular-next');
+
+  if (carousel && prevButton && nextButton) {
+
+    // ------------------------------------------
+    // Barajar productos
+    // ------------------------------------------
+
+    const cards = Array.from(carousel.children);
+
     for (let i = cards.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [cards[i], cards[j]] = [cards[j], cards[i]];
     }
-    cards.forEach((card) => grid.appendChild(card));
+
+    cards.forEach((card) => carousel.appendChild(card));
+
+
+    // ------------------------------------------
+    // Actualizar estado de las flechas
+    // ------------------------------------------
+
+    const updateButtons = () => {
+      const maxScroll = carousel.scrollWidth - carousel.clientWidth;
+
+      prevButton.disabled = carousel.scrollLeft <= 1;
+      nextButton.disabled = carousel.scrollLeft >= maxScroll - 1;
+    };
+
+
+    // ------------------------------------------
+    // Obtener distancia de desplazamiento
+    // ------------------------------------------
+
+    const getScrollAmount = () => {
+      const firstCard = carousel.querySelector('a');
+
+      if (!firstCard) return carousel.clientWidth;
+
+      const cardWidth = firstCard.getBoundingClientRect().width;
+
+      // 10px = gap-2.5
+      return cardWidth + 10;
+    };
+
+
+    // ------------------------------------------
+    // BOTÓN ANTERIOR
+    // ------------------------------------------
+
+    prevButton.addEventListener('click', () => {
+      carousel.scrollBy({
+        left: -getScrollAmount(),
+        behavior: 'smooth'
+      });
+    });
+
+
+    // ------------------------------------------
+    // BOTÓN SIGUIENTE
+    // ------------------------------------------
+
+    nextButton.addEventListener('click', () => {
+      carousel.scrollBy({
+        left: getScrollAmount(),
+        behavior: 'smooth'
+      });
+    });
+
+
+    // ------------------------------------------
+    // Actualizar botones mientras se desplaza
+    // ------------------------------------------
+
+    carousel.addEventListener('scroll', updateButtons);
+
+
+    // ------------------------------------------
+    // Actualizar al cambiar tamaño de pantalla
+    // ------------------------------------------
+
+    window.addEventListener('resize', updateButtons);
+
+
+    // Estado inicial
+    updateButtons();
   }
 </script>
+
+<style>
+  /* Ocultar scrollbar del carrusel */
+  #popular-products-carousel::-webkit-scrollbar {
+    display: none;
+  }
+
+  #popular-products-carousel {
+    -ms-overflow-style: none;
+  }
+</style>
