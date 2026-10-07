@@ -17,6 +17,8 @@ export function getStaticPaths() {
 
 const { product } = Astro.props;
 const { name, price, oldPrice, productDetails, productDescription, stock, marca, sku, specs, features, category, variants } = product;
+// Título corto para Google. Si el producto no tiene seoTitle, usa el nombre completo.
+const seoTitle = product.seoTitle || name;
 
 // `image`/`images` pueden venir como string único o como array (varias fotos
 // en distintos ángulos) — estos helpers normalizan cualquiera de los dos formatos.
@@ -29,7 +31,9 @@ const gallery = getGalleryImages(product);
 // modelo/control), se muestra el selector de opciones debajo del precio.
 const hasVariants = Array.isArray(variants) && variants.length > 1;
 const defaultVariant = hasVariants ? variants[0] : null;
-const initialName = defaultVariant ? `${name} - ${defaultVariant.label}` : name;
+const initialName = defaultVariant
+  ? (defaultVariant.shortName || `${name} - ${defaultVariant.label}`)
+  : name;
 const initialCartId = defaultVariant ? `${product.slug}::${defaultVariant.id}` : product.slug;
 
 const categoryData = categories.find((c) => c.slug === category);
@@ -41,7 +45,7 @@ const fullUrl = `https://autoboutiqueolga.com/tienda/${product.slug}`;
 const productSchemas = generateProductSchemas(product, categoryData?.name);
 ---
 
-<Layout title={`${name} | Autoboutique Olga`} description={productDescription} image={cover} url={fullUrl} ogType="product" price={price} priceCurrency="PEN" availability={stock ? "in stock" : "out of stock"} structuredData={productSchemas}>
+<Layout title={`${seoTitle} | Autoboutique Olga`} description={productDescription} image={cover} url={fullUrl} ogType="product" price={price} priceCurrency="PEN" availability={stock ? "in stock" : "out of stock"} structuredData={productSchemas}>
   <main class="mx-auto px-5 pb-[60px]">
 
     <!-- BLOQUE SUPERIOR -->
@@ -88,6 +92,7 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
                   data-price={v.price ?? price}
                   data-old-price={v.oldPrice ?? ''}
                   data-gallery={JSON.stringify(getGalleryImages(v))}
+                  data-short-name={v.shortName ?? ''}
                 >
                   <img src={v.images?.[0] || getCoverImage(v)} alt={v.label} class="w-14 h-14 object-contain" />
                   <span class="text-[0.72rem] text-[#444444] text-center leading-tight">{v.label}</span>
@@ -310,6 +315,7 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
     item.addEventListener('click', () => {
       const variantId = item.getAttribute('data-variant-id');
       const label = item.getAttribute('data-label');
+      const shortName = item.getAttribute('data-short-name');
       const sku = item.getAttribute('data-sku');
       const price = parseFloat(item.getAttribute('data-price'));
       const oldPriceRaw = item.getAttribute('data-old-price');
@@ -358,7 +364,8 @@ const productSchemas = generateProductSchemas(product, categoryData?.name);
       // botones agregar/whatsapp
       [addToCartBtn, whatsappBtn].forEach((btn) => {
         if (!btn) return;
-        if (fullName) btn.dataset.name = fullName;
+        const cartName = shortName || fullName;
+        if (cartName) btn.dataset.name = cartName;
         if (Number.isFinite(price)) btn.dataset.price = String(price);
         if (gallery[0]?.full) btn.dataset.image = gallery[0].full;
         if (sku) btn.dataset.sku = sku;

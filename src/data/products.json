@@ -5194,6 +5194,7 @@
 {
     "slug": "alarma-autorus-bt-a20-y-bt-a21-bluetooth-para-carro",
     "name": "Alarma Autorus BT-A20 y BT-A21 gota Bluetooth para Carro - Controla y Protege tu Auto desde tu Celular",
+    "seoTitle": "Alarma Autorus Bluetooth BT-A20 y BT-A21",
     "category": "alarma-autorus",
     "price": 110,
     "oldPrice": 150,
@@ -5254,6 +5255,7 @@
       {
         "id": "bt-a20",
         "label": "BT-A20",
+        "shortName": "Alarma BT-A20",
         "sku": "BT-A20",
     "price": 110,
     "oldPrice": 150,
@@ -5269,6 +5271,7 @@
       {
         "id": "bt-a21",
         "label": "BT-A21",
+        "shortName": "Alarma BT-A21",
         "sku": "BT-A21",
     "price": 110,
     "oldPrice": 150,
@@ -5291,6 +5294,7 @@
 {
   "slug": "alarma-autorus-a5-llave-flip-bluetooth-para-auto",
   "name": "Alarma Autorus A5 con Llave Flip para Auto Toyota, Nissan, Kia y Hyundai - Bluetooth, Seguros Eléctricos y App desde tu Celular",
+  "seoTitle": "Alarma Autorus Llave Flip A5 Bluetooth para Auto",
   "category": "alarma-autorus",
   "price": 130,
   "oldPrice": 180,
@@ -5351,6 +5355,7 @@
     {
       "id": "toyota",
       "label": "Toyota",
+      "shortName": "Alarma Llave Flip Toyota",
       "sku": "AUTORUS-A5-FLIP-TOYOTA",
   "price": 130,
   "oldPrice": 180,
@@ -5370,6 +5375,7 @@
     {
       "id": "nissan",
       "label": "Nissan",
+      "shortName": "Alarma Llave Flip Nissan",
       "sku": "AUTORUS-A5-FLIP-NISSAN",
   "price": 130,
   "oldPrice": 180,
@@ -5387,6 +5393,7 @@
     {
       "id": "kia",
       "label": "Kia",
+      "shortName": "Alarma Llave Flip Kia",
       "sku": "AUTORUS-A5-FLIP-KIA",
   "price": 130,
   "oldPrice": 180,
@@ -5404,6 +5411,7 @@
     {
       "id": "hyundai",
       "label": "Hyundai",
+      "shortName": "Alarma Llave Flip Hyundai",
       "sku": "AUTORUS-A5-FLIP-HYUNDAI",
   "price": 130,
   "oldPrice": 180,
@@ -5430,7 +5438,7 @@
 
 {
   "slug": "alarma-genius-g24se-prox-series-para-auto",
-  "name": "Alarma Genius G24SE Prox Series para Auto - Corte de Corriente y Cierre Automático (Elige tu Control)",
+  "name": "Alarma Genius G24SE Prox Series",
   "category": "alarma-genius",
   "price": 100,
   "oldPrice": 150,
@@ -5503,6 +5511,7 @@
       "id": "g24se-a",
       "label": "G24SE-A",
       "sku": "G24SE-A",
+      "shortName": "Alarma Genius G24SE-A",
   "price": 100,
   "oldPrice": 150,
   "image": [
@@ -5519,6 +5528,7 @@
     {
       "id": "g24se-c8",
       "label": "G24SE-C8",
+      "shortName": "Alarma Genius G24SE-C8",
       "sku": "G24SE-C8",
   "price": 100,
   "oldPrice": 150,
@@ -5536,6 +5546,7 @@
     {
       "id": "g24se-z14",
       "label": "G24SE-Z14",
+      "shortName": "Alarma Genius G24SE-Z14",
       "sku": "G24SE-Z14",
   "price": 100,
   "oldPrice": 150,
@@ -5620,6 +5631,7 @@
 {
   "slug": "alarma-quality-q110-q125-q150-para-auto",
   "name": "Alarma Quality Q-110 Q-125 Q-150 para Auto - Detecta Movimiento Cerca de tu Carro (2 Controles)",
+  "seoTitle": "Alarma Quality Q-110, Q-125 y Q-150 para Auto",
   "category": "alarma-quality",
   "price": 90,
   "oldPrice": 120,
@@ -5691,6 +5703,7 @@
     {
       "id": "q-110",
       "label": "Q-110",
+      "shortName": "Alarma Quality Q-110",
       "sku": "Q-110",
   "price": 90,
   "oldPrice": 120,
@@ -5708,6 +5721,7 @@
     {
       "id": "q-125",
       "label": "Q-125",
+      "shortName": "Alarma Quality Q-125",
       "sku": "Q-125",
   "price": 90,
   "oldPrice": 120,
@@ -5725,6 +5739,7 @@
     {
       "id": "q-150",
       "label": "Q-150",
+      "shortName": "Alarma Quality Q-150",
       "sku": "Q-150",
   "price": 90,
   "oldPrice": 120,
@@ -5872,7 +5887,7 @@
 
 {
   "slug": "alarma-rtcar-llave-flip-bluetooth-para-auto",
-  "name": "Alarma RTCAR con Llave Flip Bluetooth para Auto - Control por Celular desde la App Smart Car",
+  "name": "Alarma RTCAR Llave Flip Bluetooth para Auto",
   "category": "alarma-rtcar",
   "price": 0,
   "oldPrice": 0,
