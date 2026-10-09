@@ -20,7 +20,14 @@ export function getStaticPaths() {
 
 const { category } = Astro.props;
 
-const categoryProducts = products.filter((p) => p.category === category.slug);
+// Categoría "madre" (ej. Alarmas): reúne los productos de las categorías en `includes`.
+const groupSlugs = category.includes ?? [];
+const categoryProducts = products.filter(
+  (p) => p.category === category.slug || groupSlugs.includes(p.category)
+);
+const filterCategories = groupSlugs.length > 0
+  ? categories.filter((c) => groupSlugs.includes(c.slug))
+  : categories;
 
 const sortOptions = [
   { label: 'Orden predeterminado', value: 'default' },
@@ -46,7 +53,7 @@ const categorySchemas = generateCategorySchemas(category, categoryProducts);
     </div>
 
     <div class="max-w-[1400px] mx-auto px-5 py-[30px] flex flex-col lg:flex-row gap-[30px]">
-      <Filters categories={categories} showCategoryFilter={false} />
+      <Filters categories={filterCategories} showCategoryFilter={groupSlugs.length > 0} />
 
       <div class="flex-1">
         <!-- TOOLBAR -->

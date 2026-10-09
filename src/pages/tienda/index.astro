@@ -36,7 +36,7 @@ function categoryName(slug) {
     </div>
 
     <div class="max-w-[1400px] mx-auto px-5 py-[30px] flex flex-col lg:flex-row gap-[30px]">
-      <Filters categories={categories} />
+      <Filters categories={categories.filter((c) => !c.includes)} />
 
       <div class="flex-1">
         <!-- TOOLBAR -->

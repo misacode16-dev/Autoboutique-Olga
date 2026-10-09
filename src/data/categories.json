@@ -15,6 +15,11 @@
   { "slug": "alarma-quality", "name": "Alarmas Quality"},
   { "slug": "alarma-sgf", "name": "Alarmas SGF"},
   { "slug": "alarma-rtcar", "name": "Alarmas RTCAR"},
+  {
+  "slug": "alarmas",
+  "name": "Alarmas para auto",
+  "includes": ["alarma-autorus", "alarma-genius", "alarma-quality", "alarma-sgf", "alarma-rtcar"]
+},
   { "slug": "antiasalto-para-autos", "name": "Antiasalto para Autos"},
   { "slug": "luces-led-autos", "name": "Luces LED para Autos"},
   { "slug": "camaras-de-retroceso", "name": "Cámaras de Retroceso"},

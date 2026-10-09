@@ -2926,8 +2926,8 @@
   "slug": "kit-cables-7power-akit-4-para-amplificador-carro",
   "name": "Kit de Cables 7Power AKIT-4 para Amplificador de Carro - Todo lo que Necesitas en Uno (Calibre 4GA)",
   "category": "cablerias",
-  "price": 0,
-  "oldPrice": 0,
+  "price": 90,
+  "oldPrice": 130,
       "image": [
     "/parlantes/AKIT-4/akit-4.webp",
     "/parlantes/AKIT-4/akit-4-diagonal.webp"
@@ -3050,8 +3050,8 @@
   "slug": "kit-cables-7power-ofckit-4-100-cobre-para-amplificador-carro",
   "name": "Kit de Cables 7Power OFCKIT-4 100% Cobre para Amplificador de Carro - Máxima Conducción de Energía (Calibre 4GA)",
   "category": "cablerias",
-  "price": 0,
-  "oldPrice": 0,
+  "price": 190,
+  "oldPrice": 240,
       "image": [
     "/parlantes/OFCKIT-4/ofckit-4.webp"
   ],
@@ -5889,8 +5889,8 @@
   "slug": "alarma-rtcar-llave-flip-bluetooth-para-auto",
   "name": "Alarma RTCAR Llave Flip Bluetooth para Auto",
   "category": "alarma-rtcar",
-  "price": 0,
-  "oldPrice": 0,
+  "price": 120,
+  "oldPrice": 160,
   "image": [
     "/alarmas/llave-flip-rtcar/alarma-1/alarma-llave-flip-rtcar.webp",
     "/alarmas/llave-flip-rtcar/alarma-1/llave-flip-alarma-rtcar.webp"
@@ -6234,11 +6234,11 @@
 
 
 {
-  "slug": "barra-led-para-auto-luz-led-roja-emergencia-ventosa-80-led",
-  "name": "Barra Led para Auto de Luz LED Roja de Emergencia con Ventosa - 80 LED",
+  "slug": "barra-luz-policial-rojo-azul-30cm-ventosa-80-led",
+  "name": "Barra de Luz Policial Rojo y Azul 30 cm con Ventosa - 80 LED",
   "category": "luces-led-autos",
-  "price": 0,
-  "oldPrice": 0,
+  "price": 80,
+  "oldPrice": 120,
   "image": [
     "/barras-led/barra-led-2/barra-led.webp",
     "/barras-led/barra-led-2/barra-led-conector.webp"
@@ -6247,22 +6247,22 @@
     "/barras-led/barra-led-2/barra-led-mini.webp",
     "/barras-led/barra-led-2/barra-led-conector-mini.webp"
   ],
-  "productDetails": "Esta barra de luz roja te ayuda a que otros conductores te vean a tiempo, ya sea de día o de noche, evitando choques o accidentes por falta de visibilidad. Tiene 80 luces LED muy brillantes que se notan desde lejos, incluso bajo el sol o en la oscuridad total. Puedes elegir entre 12 formas distintas de parpadeo (fija, rápida, alternada) según lo que necesites: avisar un peligro en la pista, señalizar una obra, un remolque o una emergencia. La instalación es muy sencilla: se pega al parabrisas delantero o trasero con 4 ventosas resistentes, sin necesidad de taladrar ni usar herramientas, y se conecta directo al encendedor de tu auto (12V), quedando lista para usar en minutos. Su carcasa es de aluminio, resistente a la corrosión y al calor, por lo que dura más de 50,000 horas de uso sin gastar mucha batería. Es ideal para autos, camionetas, camiones, tractores o cualquier vehículo que necesite una señal de advertencia confiable.",
-  "productDescription": "Luz LED roja intermitente con 80 focos de alta intensidad y 4 ventosas para parabrisas. 12 modos de destello, fácil instalación y conexión a 12V. Ideal para emergencias, obras y remolques.",
+  "productDetails": "Esta barra de luz policial en rojo y azul te ayuda a que otros conductores te vean a tiempo, de día o de noche, evitando choques por falta de visibilidad. Tiene 80 luces LED muy brillantes que se notan desde lejos, incluso bajo el sol. Puedes elegir entre 12 formas distintas de destello (fija, rápida, alternada) y la barra recuerda el último modo que usaste, así no tienes que configurarla cada vez. Mide 30 cm, un tamaño compacto que no tapa la visión del conductor y se guarda fácil. Se instala en minutos: se pega al parabrisas delantero o trasero con 4 ventosas resistentes, sin taladrar ni usar herramientas, y se conecta al encendedor de tu auto (12V). Su carcasa es de aluminio, resistente a la corrosión, y dura más de 50,000 horas de uso. Importante: las luces rojo y azul suelen estar reservadas para vehículos de emergencia o seguridad, así que verifica la normativa vigente antes de usarla en vía pública.",
+  "productDescription": "Barra de luz policial rojo y azul de 30 cm con 80 LED, 12 modos de destello y 4 ventosas para parabrisas. Conexión al encendedor 12V. Verifica la normativa antes de usar en vía pública.",
   "stock": true,
   "marca": "",
   "sku": "",
   "specs": [
-    { "label": "Color y luces", "value": "Rojo, 80 LED de alta intensidad" },
+    { "label": "Tamaño y luces", "value": "30 cm, 80 LED rojo y azul" },
     { "label": "Modos de destello", "value": "12 patrones con memoria automática" },
-    { "label": "Alimentación", "value": "12V, conector de encendedor de auto, cable de 2.9 m" },
-    { "label": "Material y duración", "value": "Aluminio anticorrosivo, más de 50,000 horas de vida útil" }
+    { "label": "Alimentación", "value": "12V, conector de encendedor de auto" },
+    { "label": "Instalación", "value": "4 ventosas para parabrisas delantero o trasero" }
   ],
   "features": [
-    "Se ve desde lejos, de día y de noche: sus 80 luces LED de alta intensidad hacen que otros conductores te noten a tiempo y evites accidentes.",
-    "Elige el destello según la situación: 12 modos distintos (fijo, rápido, alterno) para avisar peligro, señalizar una obra, un remolque o una emergencia.",
-    "Se instala en minutos, sin herramientas: 4 ventosas fuertes lo fijan al parabrisas y se conecta directo al encendedor de tu auto, listo para usar.",
-    "Hecha para durar: carcasa de aluminio resistente a la corrosión, con más de 50,000 horas de vida útil y bajo consumo de batería."
+    "Se ve desde lejos, de día y de noche: sus 80 LED rojo y azul hacen que otros conductores te noten a tiempo.",
+    "Elige entre 12 modos de destello y la barra recuerda el último que usaste.",
+    "Se instala en minutos, sin herramientas: 4 ventosas la fijan al parabrisas y se conecta al encendedor de tu auto.",
+    "Compacta (30 cm) y con carcasa de aluminio resistente a la corrosión, con más de 50,000 horas de vida útil."
   ]
 },
 
@@ -6272,11 +6272,11 @@
 
 
 {
-  "slug": "barra-led-para-auto-interior-blanca-portatil-ventosa",
-  "name": "Barra Led para Auto Interior Blanca Portátil con Ventosa e Interruptor 12V",
+  "slug": "barra-luz-policial-rojo-azul-50cm-ventosa-interruptor",
+  "name": "Barra de Luz Policial Rojo y Azul 50 cm con Ventosas e Interruptor",
   "category": "luces-led-autos",
-  "price": 0,
-  "oldPrice": 0,
+  "price": 110,
+  "oldPrice": 150,
   "image": [
     "/barras-led/barra-led-3/barra-led.webp",
     "/barras-led/barra-led-3/barra-led-conector.webp"
@@ -6285,22 +6285,22 @@
     "/barras-led/barra-led-3/barra-led-mini.webp",
     "/barras-led/barra-led-3/barra-led-conector-mini.webp"
   ],
-  "productDetails": "Esta barra de luz LED blanca te da iluminación constante y brillante en cualquier lugar donde la necesites: dentro del auto, en la maletera, en una carpa de camping, en el garaje o en cualquier rincón oscuro. A diferencia de una luz intermitente, esta se queda encendida de forma fija, ideal para ver bien mientras buscas algo, arreglas el carro de noche o simplemente necesitas más luz dentro del vehículo. Se prende y apaga con el interruptor que ya viene incorporado en el mismo enchufe, así que no necesitas instalar un botón aparte ni hacer cableado. Se coloca en segundos gracias a sus 4 ventosas, que se pegan firmemente al techo, al vidrio o a cualquier superficie lisa, y se puede despegar y volver a pegar cuando quieras, sin dejar marcas. Se conecta directo al encendedor de tu auto (12V) y queda lista para usar de inmediato, sin instalación complicada.",
-  "productDescription": "Barra de luz LED blanca con ventosas e interruptor integrado. Iluminación fija y brillante para el interior del auto, camping o garaje. Se conecta al encendedor 12V y se instala en segundos.",
+  "productDetails": "Esta barra de luz policial en rojo y azul mide 50 cm, un largo que cubre buena parte del parabrisas y hace que tu vehículo se note desde más lejos que con las barras más pequeñas. Se enciende y apaga con un interruptor que ya viene integrado en el mismo enchufe, así no necesitas desconectarla cada vez ni instalar un botón aparte. Se coloca en segundos con sus 4 ventosas, que se pegan firmemente al vidrio y se pueden despegar y volver a usar cuando quieras, sin dejar marcas. Se conecta directo al encendedor de tu auto (12V) y queda lista para usar. Importante: las luces rojo y azul suelen estar reservadas para vehículos de emergencia o seguridad, así que verifica la normativa vigente antes de usarla en vía pública.",
+  "productDescription": "Barra de luz policial rojo y azul de 50 cm con 4 ventosas e interruptor integrado en el enchufe. Conexión al encendedor 12V. Verifica la normativa antes de usar en vía pública.",
   "stock": true,
   "marca": "",
   "sku": "",
   "specs": [
-    { "label": "Tipo de luz", "value": "LED blanca fija (no intermitente)" },
+    { "label": "Tamaño y luces", "value": "50 cm, luces rojo y azul" },
     { "label": "Encendido/apagado", "value": "Interruptor integrado en el mismo enchufe" },
     { "label": "Alimentación", "value": "12V, conector de encendedor de auto" },
     { "label": "Instalación", "value": "4 ventosas, sin herramientas ni cableado" }
   ],
   "features": [
-    "Luz fija y brillante para ver bien en la oscuridad: ideal para el interior del auto, la maletera, una carpa de camping o el garaje.",
-    "Se enciende y apaga con un solo interruptor, ya integrado en el enchufe, sin cables sueltos ni instalación complicada.",
-    "Se coloca en segundos con sus 4 ventosas, en el techo, el vidrio o cualquier superficie lisa, y se puede despegar y reutilizar cuantas veces quieras.",
-    "Se conecta directo al encendedor de tu auto (12V) y queda lista para usar apenas la sacas de la caja."
+    "Con 50 cm de largo, cubre buena parte del parabrisas y se nota desde más lejos que las barras pequeñas.",
+    "Se enciende y apaga con un solo interruptor, ya integrado en el enchufe, sin cables sueltos.",
+    "Se coloca en segundos con sus 4 ventosas y se puede despegar y reutilizar cuantas veces quieras.",
+    "Se conecta directo al encendedor de tu auto (12V) y queda lista para usar."
   ]
 },
 
@@ -6444,8 +6444,8 @@
 
 
 {
-  "slug": "kit-camara-retroceso-weyda-ahd-1080p-camion-bus",
-  "name": "Kit de Cámara de Retroceso AHD 1080P Weyda para Camión y Bus - Pantalla 7\"",
+  "slug": "Camara-retroceso-camion-weyda-ahd-1080p",
+  "name": "Cámara de Retroceso para Camión AHD 1080P Weyda - Pantalla 7\"",
   "category": "camaras-de-retroceso",
   "price": 280,
   "oldPrice": 320,
@@ -6535,8 +6535,8 @@
   "slug": "kit-cierre-centralizado-safari-y70128a",
   "name": "Kit de Cierre Centralizado Safari - Y70128A",
   "category": "cierre-centralizado",
-  "price": 0,
-  "oldPrice": 0,
+  "price": 45,
+  "oldPrice": 90,
   "image": [
     "/cierre-centralizado/safari/cierre-centralizado.webp",
     "/cierre-centralizado/safari/cierre-centralizado-modulo.webp",
@@ -6585,8 +6585,8 @@
   "slug": "kit-cierre-centralizado-autorus-premium-atr500",
   "name": "Kit de Cierre Centralizado Autorus Serie Premium - ATR500",
   "category": "cierre-centralizado",
-  "price": 0,
-  "oldPrice": 0,
+  "price": 70,
+  "oldPrice": 110,
   "image": [
     "/cierre-centralizado/autorus/caja-cierre-centralizado.webp",
     "/cierre-centralizado/autorus/pestillo-cierre-centralizado.webp"
