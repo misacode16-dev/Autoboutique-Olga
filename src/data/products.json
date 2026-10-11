@@ -66,7 +66,7 @@
   {
   "slug": "parlantes-jbl-shock-wave-100w65-6-5-pulgadas-para-carro",
   "name": "Parlantes JBL Shock Wave 100W65 para Carro 6.5 Pulgadas (Par) - Medios Potentes y Claros",
-  "category": "parlantesBarra Led para Auto Interior Blanca Portátil con Ventosa e Interruptor 12V",
+  "category": "parlantes",
    "price": 320,
   "oldPrice": 360,
     "image": [
@@ -2051,7 +2051,7 @@
   "name": "Parlantes Pioneer TS-A1688S 6.5 Pulgadas 4 Vías para Carro (Par) - El Más Completo de la Serie A (80W RMS)",
   "category": "parlantes",
   "price": 270,
-  "oldPrice": 210,
+  "oldPrice": 310,
       "image": [
     "/parlantes/TS-A1688S/ts-a1688s.webp",
     "/parlantes/TS-A1688S/ts-a1688s-frente.webp",
@@ -3639,7 +3639,7 @@
 
 
 {
-  "slug": "autoradio-pioneer-mvh-x700bt-Bluetooth-club-lights-smart-sync-para-carro",
+  "slug": "autoradio-pioneer-mvh-x700bt-bluetooth-club-lights-smart-sync-para-carro",
   "name": "Autoradio Pioneer MVH-X700BT Bluetooth con Luces Club Lights y Smart Sync para Carro - Convierte tu Carro en Fiesta",
   "category": "autoradios",
   "price": 480,
@@ -4829,7 +4829,7 @@
   "productDetails": "Si quieres darle un toque de identidad peruana a tu carro sin importar la marca del vehículo que tengas, estos portaplacas con la inscripción \"República del Perú\" son la opción ideal. Están hechos de acero galvanizado, un material tratado para resistir el óxido y la corrosión, así que aguantan bien la lluvia, el sol y el uso diario sin echarse a perder con el tiempo. Su diseño es universal, por lo que se instalan fácil y rápido tanto en autos como en camionetas de cualquier marca, sin necesidad de herramientas especiales ni ayuda de un mecánico. El texto está disponible en varios colores (azul, dorado o rojo) para que elijas el que combine mejor con tu carro. Se venden en par, listos para colocar en la placa delantera y trasera de tu vehículo.",
   "productDescription": "Portaplacas República del Perú para auto y camioneta, acero galvanizado resistente al óxido, instalación universal y rápida. Texto disponible en azul, dorado o rojo. Se venden en par.",
   "stock": true,
-  "marca": "Genérico",
+  "marca": "",
   "sku": "PORTAPLACA-PERU",
   "specs": [
     {
@@ -5947,9 +5947,9 @@
     {
       "id": "generica",
       "label": "Genérica",
-      "sku": "RTCAR-FLIP-BT",
-      "price": 22,
-      "oldPrice": 22,
+      "sku": "",
+  "price": 120,
+  "oldPrice": 160,
   "image": [
     "/alarmas/llave-flip-rtcar/alarma-1/alarma-llave-flip-rtcar.webp",
     "/alarmas/llave-flip-rtcar/alarma-1/llave-flip-alarma-rtcar.webp"
@@ -5961,10 +5961,10 @@
     },
     {
       "id": "led",
-      "label": "Generico",
-      "sku": "RTCAR-FLIP-BT",
-      "price": 22,
-      "oldPrice": 22,
+      "label": "Genérica",
+      "sku": "",
+  "price": 120,
+  "oldPrice": 160,
       "image": [
         "/alarmas/llave-flip-rtcar/alarma-2/alarma-llave-flip-rtcar.webp",
         "/alarmas/llave-flip-rtcar/alarma-2/llave-flip-alarma-rtcar.webp"
@@ -5978,8 +5978,8 @@
       "id": "chevrolet",
       "label": "Chevrolet",
       "sku": "RTCAR-FLIP-CHEVROLET-BT",
-      "price": 22,
-      "oldPrice": 22,
+  "price": 120,
+  "oldPrice": 160,
       "image": [
         "/alarmas/llave-flip-rtcar/alarma-3/alarma-llave-flip-rtcar.webp",
         "/alarmas/llave-flip-rtcar/alarma-3/llave-flip-alarma-rtcar.webp"
@@ -6013,11 +6013,11 @@
   "productDetails": "Este cortacorriente para auto es distinto a una alarma normal: no tiene sirena ni hace ruido, porque está pensado para situaciones de asalto o secuestro del vehículo, donde lo último que quieres es alertar al delincuente. Funciona por proximidad, cortando la corriente eléctrica o la línea de combustible del motor cuando te alejas del carro sin el control, evitando que puedan arrancarlo o que sigan avanzando con él sin que se den cuenta de inmediato por qué el carro dejó de funcionar. Es universal para 12V, así que funciona en la mayoría de autos y camionetas sin importar la marca. Tiene un indicador LED que te muestra el estado del sistema: si está en la primera o segunda etapa de protección, si el control se comunicó correctamente, o si está en modo de programación. Su alcance es de hasta 50 metros y resiste temperaturas extremas, desde mucho frío hasta mucho calor, por lo que funciona de forma confiable en cualquier clima. Es una capa de seguridad adicional pensada específicamente para tu tranquilidad ante situaciones de robo con violencia, no solo un robo silencioso del carro estacionado.",
   "productDescription": "Antiasalto cortacorriente por proximidad para tu auto o camioneta, universal 12V. Corta el motor o combustible en silencio ante un asalto, sin alertar al delincuente. Alcance de 50 metros, resiste temperaturas extremas.",
   "stock": true,
-  "marca": "Genérico",
+  "marca": "",
   "sku": "ANTIASALTO-PROXIMIDAD-12V",
   "filtros": [
     {
-      "brand": "Genérico",
+      "brand": "",
       "model": "ANTIASALTO-PROXIMIDAD-12V"
     }
   ],
@@ -6444,7 +6444,7 @@
 
 
 {
-  "slug": "Camara-retroceso-camion-weyda-ahd-1080p",
+  "slug": "camara-retroceso-camion-weyda-ahd-1080p",
   "name": "Cámara de Retroceso para Camión AHD 1080P Weyda - Pantalla 7\"",
   "category": "camaras-de-retroceso",
   "price": 280,
@@ -6931,7 +6931,7 @@
   "name": "Foco LED H4 Autorus R10s Tricolor + Estrobo - 65,000 Lúmenes",
   "category": "focos-led-h4-para-auto",
   "price": 230,
-  "oldPrice": 230,
+  "oldPrice": 270,
                 "image": [
     "/focos/r10s/foco-r10s.webp",
     "/focos/r10s/caja-foco-r10s.webp"
