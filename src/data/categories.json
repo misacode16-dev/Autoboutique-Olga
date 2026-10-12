@@ -29,5 +29,6 @@
   { "slug": "inmovilizadores", "name": "Inmovilizadores para Autos"},
   { "slug": "sirenas", "name": "Sirenas para Auto"},
   { "slug": "focos-led-h4-para-auto", "name": "Focos LED H4 para Autos"},
-  { "slug": "focos-led-h7-para-auto", "name": "Focos LED H7 para Autos"}
+  { "slug": "focos-led-h7-para-auto", "name": "Focos LED H7 para Autos"},
+  { "slug": "faros-auxiliares-led", "name": "Faro Auxiliar LED para Autos"}
 ]
