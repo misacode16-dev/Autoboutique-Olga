@@ -29,6 +29,8 @@ const pageSchemas = Array.isArray(structuredData)
     : [];
 
 const allSchemas = [...globalSchemas, ...pageSchemas];
+
+const CF_TOKEN = import.meta.env.PUBLIC_CF_ANALYTICS_TOKEN;
 ---
 <!doctype html>
 <html lang="es-PE" prefix="og: https://ogp.me/ns# product: https://ogp.me/ns/product#">
