@@ -40,6 +40,8 @@ const twitterImageUrl = toAbsolute(twitterImageRaw);
 // 1200x630 solo es verdad para la imagen de marca. Las fotos de producto
 // tienen otras medidas, así que en ese caso no se declaran.
 const ogImageIsBrand = ogImageRaw === BRAND_OG_IMAGE;
+
+const CF_TOKEN = import.meta.env.PUBLIC_CF_ANALYTICS_TOKEN;
 ---
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <meta charset="UTF-8" />
