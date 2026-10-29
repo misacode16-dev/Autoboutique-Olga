@@ -23,13 +23,14 @@
   { "slug": "antiasalto-para-autos", "name": "Antiasalto para Autos"},
   { "slug": "luces-led-autos", "name": "Luces LED para Autos"},
   { "slug": "camaras-de-retroceso", "name": "Cámaras de Retroceso"},
-  { "slug": "dvr-para-auto", "name": "Cámaras DVR para Auto"},
+  { "slug": "camaras-para-camiones", "name": "Cámaras para Camiones"},
   { "slug": "cierre-centralizado", "name": "Cierre Centralizado"},
   { "slug": "seguros-timon-pedal", "name": "Seguros de Timón y Pedal para Auto"},
   { "slug": "inmovilizadores", "name": "Inmovilizadores para Autos"},
-  { "slug": "sirenas", "name": "Sirenas para Auto"},
+  { "slug": "sirenas-policiales", "name": "Sirenas policiales"},
   { "slug": "focos-led-h4-para-auto", "name": "Focos LED H4 para Autos"},
   { "slug": "focos-led-h7-para-auto", "name": "Focos LED H7 para Autos"},
   { "slug": "faros-auxiliares-led", "name": "Faro Auxiliar LED para Autos"},
-  { "slug": "sensores-de-retroceso", "name": "Sensores de Retroceso para Auto"}
+  { "slug": "sensores-de-retroceso", "name": "Sensores de Retroceso para Auto"},
+  { "slug": "gps-para-autos", "name": "GPS para Autos"}
 ]

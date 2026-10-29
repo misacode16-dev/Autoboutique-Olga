@@ -5253,35 +5253,35 @@
     ],
     "variants": [
       {
-        "id": "bt-a20",
-        "label": "BT-A20",
-        "shortName": "Alarma BT-A20",
-        "sku": "BT-A20",
-    "price": 110,
-    "oldPrice": 150,
+        "id": "",
+        "label": "",
+        "shortName": "",
+        "sku": "",
+    "price": 0,
+    "oldPrice": 0,
     "image": [
-      "/alarmas/autorus/bt-a20/alarma-autorus-bt-a20.webp",
-      "/alarmas/autorus/bt-a20/control-alarma-autorus-bt-a20.webp"
+      "",
+      ""
     ],
     "images": [
-      "/alarmas/autorus/bt-a20/alarma-autorus-bt-a20-mini.webp",
-      "/alarmas/autorus/bt-a20/control-alarma-autorus-bt-a20-mini.webp"
+      "",
+      ""
     ]
       },
       {
-        "id": "bt-a21",
-        "label": "BT-A21",
-        "shortName": "Alarma BT-A21",
-        "sku": "BT-A21",
-    "price": 110,
-    "oldPrice": 150,
+        "id": "",
+        "label": "",
+        "shortName": "",
+        "sku": "",
+    "price": 0,
+    "oldPrice": 0,
         "image": [
-          "/alarmas/autorus/bt-a21/alarma-autorus-bt-a21.webp",
-          "/alarmas/autorus/bt-a21/control-alarma-autorus-bt-a21.webp"
+          "",
+          ""
         ],
         "images": [
-          "/alarmas/autorus/bt-a21/alarma-autorus-bt-a21-mini.webp",
-          "/alarmas/autorus/bt-a21/control-alarma-autorus-bt-a21-mini.webp"
+          "",
+          ""
         ]
       }
     ]
@@ -6061,7 +6061,7 @@
 {
   "slug": "sirena-electronica-kx-100w-microfono-para-auto",
   "name": "Sirena Electrónica KX-100W con Micrófono para Auto - 5 Tonos y Altavoz para Anunciar (115dB)",
-  "category": "sirenas",
+  "category": "sirenas-policiales",
   "price": 60,
   "oldPrice": 100,
   "image": [
@@ -6121,7 +6121,7 @@
 {
   "slug": "sirena-inalambrica-xyal-2131-12-tonos-para-auto",
   "name": "Sirena Inalámbrica XYAL-2131 con 12 Tonos para Auto - Hasta 400W de Potencia",
-  "category": "sirenas",
+  "category": "sirenas-policiales",
   "price": 450,
   "oldPrice": 500,
   "image": [
@@ -6405,7 +6405,7 @@
 {
   "slug": "pantalla-7-dvr-2-camaras-inalambricas-hd-1080p",
   "name": "Pantalla LED 7\" con DVR y 2 Cámaras Inalámbricas HD 1080P para Camión",
-  "category": "dvr-para-auto",
+  "category": "camaras-para-camiones",
   "price": 380,
   "oldPrice": 420,
   "image": [
@@ -8098,6 +8098,70 @@
     "Se usa con la pantalla de tu radio original o el monitor de tu cámara, sin pantalla adicional",
     "Sensores negros que combinan con la mayoría de parachoques",
     "Kit completo con caja de control, cables largos y sierra copa para instalarlo"
+  ]
+},
+
+
+
+
+
+
+
+{
+  "slug": "gps-4g-alsama-para-auto-corte-motor-401cd",
+  "name": "GPS 4G Alsama para Auto con Corte de Motor Remoto - Rastreo en Tiempo Real",
+  "seoTitle": "GPS 4G Alsama para Auto con Corte de Motor",
+  "category": "gps-para-autos",
+  "price": 0,
+  "oldPrice": 0,
+      "image": [
+    "/alarmas/gps/gps-alsama-4g-caja.webp",
+    "/alarmas/gps/gps-alsama-4g-frente.webp",
+    "/alarmas/gps/gps-alsama-4g-arriba.webp"
+  ],
+  "images": [
+    "/alarmas/gps/gps-alsama-4g-caja-mini.webp",
+    "/alarmas/gps/gps-alsama-4g-frente-mini.webp",
+    "/alarmas/gps/gps-alsama-4g-arriba-mini.webp"
+  ],
+  "productDetails": "Este GPS 4G te permite saber dónde está tu auto en cualquier momento desde tu celular, y actuar rápido si algo pasa. Con la app (disponible para Android y iPhone) o desde una computadora o tablet, ves la ubicación en tiempo real, la velocidad, el estado del motor y el recorrido que hizo tu vehículo. Si alguien intenta robarlo, puedes cortar el motor a distancia con un solo toque; el corte puede programarse para aplicarse cuando el auto baje de 20 km/h, así no se apaga en plena marcha. También recibes alertas en tu celular si alguien enciende el motor sin tu permiso, si golpean o mueven el vehículo, o si desconectan la batería, y puedes definir una zona para que te avisen si el auto entra o sale de ella, o si supera la velocidad que fijaste. Si desconectan la batería del auto, el GPS sigue funcionando por varias horas gracias a su batería interna de respaldo. Es compatible con redes 4G LTE y también 2G, y funciona de 12V a 24V, por lo que sirve en autos, camionetas, camiones y buses. Puedes ver varios vehículos desde un mismo usuario, ideal para controlar una flota. Para enviar la ubicación a tu celular necesita un chip (SIM) con datos. El equipo se paga una sola vez. Se recomienda instalarlo con un técnico calificado.",
+  "productDescription": "GPS 4G Alsama para auto: ubicación en tiempo real, corte de motor remoto y alertas en tu celular. Batería de respaldo y 12V-24V. Ideal para autos y flotas.",
+  "stock": true,
+  "marca": "Alsama",
+  "sku": "401CD",
+  "filtros": [
+    {
+      "brand": "Alsama",
+      "model": "401CD"
+    }
+  ],
+  "specs": [
+    {
+      "label": "Conectividad",
+      "value": "4G LTE y 2G, ubicación por GPS con precisión de unos 5 metros"
+    },
+    {
+      "label": "Alimentación",
+      "value": "12V a 24V, con batería interna de respaldo recargable"
+    },
+    {
+      "label": "Control",
+      "value": "App BAANOOL IOT (Android e iPhone) y plataforma web"
+    },
+    {
+      "label": "Funciones",
+      "value": "Corte de motor remoto, alertas de encendido, golpes y desconexión de batería, zonas y exceso de velocidad"
+    },
+    {
+      "label": "Incluye",
+      "value": "Equipo GPS compacto (6.8 x 4.1 x 2.2 cm, 58 g), arnés de cables y relé para el corte de motor"
+    }
+  ],
+  "features": [
+    "Ve dónde está tu auto en tiempo real desde tu celular, con su velocidad, recorrido y estado del motor",
+    "Corta el motor a distancia con un solo toque si intentan robarlo",
+    "Recibe alertas si encienden el motor, golpean el auto o desconectan la batería",
+    "Sigue funcionando por varias horas con su batería de respaldo, y sirve para autos, camiones y flotas (12V-24V)"
   ]
 }
 ]
