@@ -5253,35 +5253,33 @@
     ],
     "variants": [
       {
-        "id": "",
-        "label": "",
-        "shortName": "",
-        "sku": "",
-    "price": 0,
-    "oldPrice": 0,
+        "id": "bt-a20",
+        "label": "BT-A20",
+        "sku": "BT-A20",
+    "price": 110,
+    "oldPrice": 150,
     "image": [
-      "",
-      ""
+      "/alarmas/autorus/bt-a20/alarma-autorus-bt-a20.webp",
+      "/alarmas/autorus/bt-a20/control-alarma-autorus-bt-a20.webp"
     ],
     "images": [
-      "",
-      ""
+      "/alarmas/autorus/bt-a20/alarma-autorus-bt-a20-mini.webp",
+      "/alarmas/autorus/bt-a20/control-alarma-autorus-bt-a20-mini.webp"
     ]
       },
       {
-        "id": "",
-        "label": "",
-        "shortName": "",
-        "sku": "",
-    "price": 0,
-    "oldPrice": 0,
+        "id": "bt-a21",
+        "label": "BT-A21",
+        "sku": "BT-A21",
+    "price": 110,
+    "oldPrice": 150,
         "image": [
-          "",
-          ""
+          "/alarmas/autorus/bt-a21/alarma-autorus-bt-a21.webp",
+          "/alarmas/autorus/bt-a21/control-alarma-autorus-bt-a21.webp"
         ],
         "images": [
-          "",
-          ""
+          "/alarmas/autorus/bt-a21/alarma-autorus-bt-a21-mini.webp",
+          "/alarmas/autorus/bt-a21/control-alarma-autorus-bt-a21-mini.webp"
         ]
       }
     ]
